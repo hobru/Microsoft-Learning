@@ -46,6 +46,9 @@ SAP and Microsoft have been working on a dedicated, bi-directional ingration of 
 
 
 ### Agent & Copilot Development 
+Depending on the skillset and complexity of the Copilot Agent that you want to build, Microsoft offers different tools to get you started. From no-code tools liek Agent Builder to pro code tools like the Microsoftt 365 Agents Tookit in Visual Studio Code. 
+![Agent & Copilot Development](Agent+CopilotDevelopment.jpg)
+
 #### Agent Builder
 Microsoft Agent Builder is a low-code tool within Microsoft Copilot Studio that empowers users to create Copilots using natural language or manual configuration. Designed for business users, IT professionals, and developers alike, Agent Builder enables the rapid development of agents that can automate workflows, answer questions, and integrate with Microsoft 365 apps and enterprise systems. With built-in support for knowledge sources, templates, and extensibility, it simplifies the creation of customized AI experiences that enhance productivity and streamline business processes.
 
@@ -56,7 +59,7 @@ The use of Knowledge sources allows users to enrich the Copilot with SAP specifi
 Microsoft Copilot Studio is a powerful, low-code platform that enables organizations to build, customize, and deploy AI-powered copilots tailored to their unique business needs. With seamless integration across Microsoft 365 and a vast library of over 1,000 prebuilt connectors—including enterprise systems like SAP, ServiceNow, Salesforce, and Dataverse—Copilot Studio allows users to automate complex workflows, access real-time data, and deliver intelligent, context-aware experiences. Whether you're streamlining operations, enhancing customer service, or empowering employees with self-service tools, Copilot Studio provides the flexibility and scalability to bring AI into every corner of your business.
 
 
-#### Azure AI Foundry
+#### Azure AI Foundry & M365 Agents Toolkit
 https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry
 
 Knowledge tools
@@ -87,9 +90,60 @@ Microsoft 365 Agents Toolkit is an evolution of Teams Toolkit.
 https://learn.microsoft.com/en-us/microsoft-365/developer/overview-m365-agents-toolkit
 Seamless integration with Microsoft 365 Agents SDK to build self-hosted agents.
 
+
+| | Agent Builder | Copilot Studio | AI Foundry |
+| --- | --- | --- | --- | 
+| **Knowledge grounding**       | Built-in RAG tied to enterprise contents (SharePoint, M365 docs, and Bing search)     | Flexible data connections to organization data (M365, and connectors to other enterprise data)        | Comprehensive retrieval integration with security, either built-in or through own APIs/vector index  |
+| **User interfaces**           | M365 Copilot Chat – surfaced with M365 Copilot experiences like in Teams              | M365 Copilot Chat + embedded in M365/custom apps and chat                                             | Bring-your-own-UI next to integration with M365 Copilot and Apps                                     |
+| **Foundation models**         | Built-in LLMs (same models behind M365 Copilot, e.g., GPT-4 or other managed models)  | Configurable models (BYOM through AI Foundry) + agent-specific fine-tuning                            | Maximum model flexibility (Foundry model catalog, custom models, and FT models)                      |
+| **Pre-built tools**           | Minimal toolset for RAG from connected knowledge sources                              | Large tool library through pre-built connectors to extend agent actions                               | Extensive and extensible tool integrations (1st party tools, connectors to LoBs, and custom)         |
+| **Tool use via MCP**          | N/A – not supported for end users                                                     | Available through marketplace with pre-built 1P/3P MCP servers                                        | Fully support MCP for pre-built 1P/3P MCP servers and custom MCP servers                             |
+| **Memory & learning**         | Short term memory within the same chat session                                       | Short term memory of the session                                                                      | Extensive stateful short/long-term memory                                                            |
+|                               | Not persistent across sessions                                                        | Extensible with external storage                                                                      | Integrated retrieval                                                                                  |
+| **Orchestrator & MAS**        | Not supported – only single stand-alone agent                                        | Multi-agent orchestration with an orchestrator pattern + connected agents                             | Built-in multi-agent orchestration supporting various conversational patterns                         |
+
+
 ### Integration Protocols
 
+![Integration Protocols](./Protocols.jpg)
+
+### OData
+OData is the Go-To protocol for transactional SAP applications. SAP Fiori, SAP ECC, SAP S/4HANA; SAP SuccessFactors, SAP Ariba, SAP Concur, ... all support OData. The [SAP Business Accelerator Hub](https://api.sap.com/) lists thousands of out of the box OData Services. The [SAP Fiori Reference App Library](https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/) shows additional OData services. 
+If no out of the box OData service is avaialble custom [CDS views](https://learning.sap.com/learning-journeys/acquire-core-abap-skills/working-with-cds-view_c289f74d-675e-4084-9d90-5635958ec604) can be created (via [RAP](https://pages.community.sap.com/topics/abap/rap) or [CAP](https://developers.sap.com/tutorials/introduction..html)) to expose additional OData services. 
+These OData services cannot only be consumed in Copilot scenario, but due to the standardization thousands of client (including Microsoft Excel, PowerBI, ...) provide out of the box support to consume OData services. 
+
+In addition OData supports the latest authentication protocols like OAuth and SAML.
+
+For Copilot scenarios, there is a common support across all tools. 
+* Agent Builder is support OData services via the Knowledge Source functionality, enabling end-users to use SAP systems as a knowledge source
+* In addition to the Knowledge Source functionality, Copilot Studio has a dedicated SAP OData Connector which support all CRUD operations supported by the underlying SAP OData services. In addition detailed documentation about implementing Single Sign-On / Principal Propagation to mutliple SAP Systems is avaialble. 
+* Azure AI Foundry supports OData services both via a low-code connector and via pro-code development extensions [Link!!!]()
+* The Agent Toolkit allows developers to use multiple libraries to connect to OData services
+
+### HTTP (SOAP & REST)
+A lot of older or aquired SAP Systems support SOAP and REST services. These protocols are support via an HTTP Connector or a custom connector in Copilot Studio. Via these connector also other HTTP protocols are supported. 
+For pro-code integrations via Azure AI Foundry or the Agent Toolkit HTTP calls can be done via commonly available packages. 
+
+### BAPI / RFC
+SAP ECC and SAP S/4HANA on-prem / private cloud edition systems still support and office BAPI and RFC. These propriatary protocols offer a very efficient, but closed integration with other system. The Agent Toolkit can use the SAP .Net Connector SDK to connect to these APIs, but an enterprise ready impelmentation can be complicated. 
+Copilot Studio already provides a well proofen SAP BAPI / RFC connector that allows users to connect to older system. The support is done useing the on-prem data Gateway together with the [SAP .Net Connector](https://support.sap.com/en/product/connectors/msnet.html) which has to be downloaded with a so called S-User.  
+
+The SAP RFC Connector in Copilot Studio also supports Single Sign-On / Principal Propagation via Kerberos and X.509 certificates. 
+
+### MCP
+MCP, the [Model Context Protocol](https://github.com/modelcontextprotocol), is an open protocol that enables seamless integration between LLM applications, like Copilot, and external data sources and tools. In contrast to the simple API based integration mentioned above, an MCP based integration enables the Copilot to identity and create the required payload to retrieve data from the SAP system in a very dynamic and efficient way. 
+Hundreds of open source MCP servers are already avaialble (the [Azure MCP Registry](https://mcp.azure.com/) not only provides a list of first curated MCP services, but also offers customers a possibility to create their own in-house MCP servers), and tools like [Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/export-rest-mcp-server) enable you to create new MCP servers out of existing APIs. 
+
+
 ### Integration & Connectivity Infrastructure
+![Integration & Connectivity Infrastructure](./Proxy.jpg)
+
+#### SAP Business Technology Platform
+A lot of customers already have services like SAP API Management or SAP Integration Suite as part of the SAP Business Technology Platform, BTP in place. The BTP is then often already connected to SAP backend systems, which obviously simplifies the connection from Copilot to SAP. 
+All Copilot tools can leverage APIs that are exposed via SAP Business Technology Platform. Using the SAP Cloud Connector (see [here](#sap-cloud-connector)) even SAP systems behind Firewalls can be accessed in a secure manner. Leveraging tools like SAP API Management additional features like Throttling, Quota Handling or also authentication steps can be performed.  
+
+#### Azure Integration Services
+To Do!!!
 
 ### Proxies / Connectivity
 In a lot of cases the SAP System is protected by a Firewall. So access from the internet (e.g. from M365 Copilot) is not possible directly. Instead a proxy needs to be installed. 
@@ -101,6 +155,8 @@ For a lot of SAP customers, the SAP Business Technoogy Platform with either SAP 
 The on-premise data gateway (OPDG) has been around for many years mainly in the context of the Power Platform. OPDG not only allows you to bridge the Firewall-Protection, but it also enables you to translate the SAP DIAG protocol used by BAPI / RFCs into HTTP calls that can be used by Copilot Studio / Power Platform. 
 If you are looking to leverage BAPI / RFC you have to install the OPDG along with the SAP .Net Connector (download here, SAP User is required). This will not only allow you to access the SAP system behind the fireall, but also leverage BAPIs / RFCs in your system. 
 If you want to connect to OData services behind a firewall, the OPDG - similar like the SAP Cloud Connector - also allows you to do that. 
+
+#### vnet Peering
 
 ### Backend Systems & Data Sources
 Since the tools and protocols mentioned above are indifferent of the actual backend system, the integration of Copilots to SAP ranges from SAP S/4HANA Public Cloud systems (using OData) to very old SAP R/3 system that can expose their data either via RFC/BAPI or with an standalone SAP Gateawy that exposes an OData Services. Authentication options vary on the used protocol and application. Here is a first overview of integration options
