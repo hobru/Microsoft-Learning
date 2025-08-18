@@ -1,4 +1,6 @@
 # Copilots with SAP
+Lots of customers want to connect their SAP Systems to Copilot. This page provides an overview: What? Why? How? 
+To get started, take a look at the [recommended architecture options](#recommendation-matrix)
 
 ## Overview
 When building Copilot Agents (whether integrated in Microsoft 365 Copilot or autonmous agents) for SAP, there are multiple options doing that. On a high level, the agents will leverage the following components:
@@ -167,8 +169,16 @@ Since the tools and protocols mentioned above are indifferent of the actual back
 | S/4HANA public cloud | OData | OAuth |
 | SAP SuccessFactors | OData / HTTP | OAuth |
 
-## Example Integration Patterns
+## Recommended  Integration Patterns
 The following list provides an overview of reference architectures. There is not only one, because it depends very much on your existing infrastructure and what components you are using. In the simplest form, you can just use Copilot Studio, use the SAP OData Connector and connect directly to your SAP system in the cloud (Option #1)
+
+### Recommendation Matrix
+- Are you running your SAP system on Azure? Do you have a good Azure practive? [Leveraging Azure API Management and vnet Peering (e.g. SAP S/4HANA Prviate Cloud or Native)](Architecture-APIM+vnet.md)
+- Do you want to use BAPI / RFC? Take a look at [Leveraging On-premise data gateway with access to BAPI / RFCs and OData Services](Architecture-OPDG.md)
+- Are you already using SAP Business Technology Platform and have connected your SAP backend system to it? [Leveraging SAP Business Technology Platform (with SAP API Management and SAP Cloud Connector)](Architecture-BTP+APIM.md)
+
+### Overview
+
 * [SAP System publically available (most likely a demo scenario)](Architecture-Demo.md)
 * [Leveraging SAP Business Technology Platform (with SAP API Management and SAP Cloud Connector)](Architecture-BTP+APIM.md)
 * [Leveraging On-premise data gateway with access to BAPI / RFCs and OData Services](Architecture-OPDG.md)
