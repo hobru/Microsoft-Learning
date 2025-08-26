@@ -14,6 +14,8 @@ SAP BTP then forwards the request via the SAP Cloud Connector to the SAP Backend
 ![Architecture](./APIM+CloudConnector-BTP+APIM.jpg)
 (This architecture only depicts one path; You can use multiple variations for the connection)
 ## Setup & Configuration
+For this scenario in most cases the SAP Business Technology platform is  in place and also the SAP Cloud Connector is already installed.
+
 ### Agent & Copilot Development 
 In Copilot Studio use the SAP OData Connector or the HTTP Connector to connect to the service exposed on BTP. You can either use the connectors directly from Copilot Studio, or use a Power Automate flow to add additional logic before / after calling the API. 
 Using the SAP OData Connector you can also implement Single Sign-On from Entra ID to the SAP Business Technology Platform.
