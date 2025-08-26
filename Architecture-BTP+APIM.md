@@ -21,8 +21,14 @@ Using the SAP OData Connector you can also implement Single Sign-On from Entra I
 * [Get started with the SAP OData Connector](https://learn.microsoft.com/en-us/power-platform/sap/connect/sap-odata-connector)
 * [What is Microsoft Power Platform integration with SAP?](https://learn.microsoft.com/en-us/power-platform/sap/explore/power-platform-and-sap-integration)
 * [Power Platform + SAP: Updates via SAP OData services](https://youtu.be/mez5qIZmrfM?si=b22hyxSTlspy-HR_)
-* [Power Platform + SAP OData - Single Sign-On - Happy path](https://youtu.be/NSE--fVLdUg?si=eYnXYX5DLuyMwuY3)
+
+### Authentication
+In most cases the expecation from users using Copilot is that there is a principal propagation in place, meaning the user that is logged on to Copilot, is also the user that is authenticated in the SAP backend system.This not only ensures that auditing and activity traces in the SAP system are tracked in the user context, but also that the user only has access to the data that he or she is allowed to have. 
+
+For all integration scenarios via the SAP Business Technology Platform Principal Propagation flows are documented.  
+
 * [Principal propagation in a multi-cloud solution between Microsoft Azure and SAP, Part IV: SSO with a Power Virtual Agents Chatbot and On-Premises Data Gateway](https://community.sap.com/t5/technology-blog-posts-by-members/principal-propagation-in-a-multi-cloud-solution-between-microsoft-azure-and/ba-p/13519225)
+* [Power Platform + SAP OData - Single Sign-On - Happy path](https://youtu.be/NSE--fVLdUg?si=eYnXYX5DLuyMwuY3)
 
 ### Integration & Connectivity Infrastructure
 The easiest way to expose APIs from your SAP backend system, is via the SAP Integration Suite. In this example we are using the SAP API Management. The policy of the API Proxy can also be enhanced to support the Principal Propagation Flow to enable Single Sign-On from the Copilot Agent to the SAP backend system. 

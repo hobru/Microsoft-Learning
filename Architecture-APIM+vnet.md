@@ -5,3 +5,15 @@
 ## Why would you use this scenario?
 
 * [Set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector](https://learn.microsoft.com/en-us/power-platform/sap/connect/entra-id-apim-oauth)
+
+
+
+## Setup & Configuration
+### Agent & Copilot Development 
+
+### Integration & Connectivity Infrastructure
+
+### Proxy / Connectivity
+
+### Backend Systems & Data Sources
+

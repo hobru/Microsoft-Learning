@@ -419,7 +419,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="AzureAPIMVnet" id="PHjmw30KDZYXvSoXsk_l">
-    <mxGraphModel dx="502" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1371" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="KrQhMU1a1y091JANB2pv-0" />
         <mxCell id="KrQhMU1a1y091JANB2pv-1" parent="KrQhMU1a1y091JANB2pv-0" />

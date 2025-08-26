@@ -3,3 +3,13 @@
 ![Architecture - On-Premises Data Gateway](./OPDG.jpg)
 
 ## Why would you use this scenario?
+
+## Setup & Configuration
+### Agent & Copilot Development 
+
+### Integration & Connectivity Infrastructure
+
+### Proxy / Connectivity
+
+### Backend Systems & Data Sources
+
