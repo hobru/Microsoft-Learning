@@ -161,17 +161,18 @@ Whether to have one single point of entry or to be able to control access to the
 
 The SAP Business Technology Platform or Azure Integration Services are two very common components in these integrations. 
 
-![Integration & Connectivity Infrastructure](./Proxy.jpg)
+![Integration & Connectivity Infrastructure](./Integration.jpg)
 
 #### SAP Business Technology Platform
 A lot of customers already have services like SAP API Management or SAP Integration Suite as part of the SAP Business Technology Platform, BTP in place. The BTP is then often already connected to SAP backend systems, which obviously simplifies the connection from Copilot to SAP. 
 All Copilot tools can leverage APIs that are exposed via SAP Business Technology Platform. Using the SAP Cloud Connector (see [here](#sap-cloud-connector)) even SAP systems behind Firewalls can be accessed in a secure manner. Leveraging tools like SAP API Management additional features like Throttling, Quota Handling or also authentication steps can be performed.  
 
 #### Azure Integration Services
-To Do!!!
+Azure provides several tools to integrate with backend systems like SAP. Most prominent in the Copilot Studio scenario is Azure API Management and Azure Logic Apps. Both provide an easy way to connect to APIs (in the case of Logic Apps both HTTP and BAPIs) and control the access to the SAP system. A huge benefit of this setup is if your SAP System is also running on Azure. In this case the connectivity can be further secured by using vnet peering. 
 
 ### Proxies / Connectivity
 In a lot of cases the SAP System is protected by a Firewall. So access from the internet (e.g. from M365 Copilot) is not possible directly. Instead a proxy needs to be installed. 
+![Integration & Connectivity Infrastructure](./Proxy.jpg)
 
 #### SAP Cloud Connector
 For a lot of SAP customers, the SAP Business Technology Platform with either SAP Integration Suite or a simple App Router is already in place. In this case, the SAP Cloud Connector is probably used to bridge the Firewall-Protection and to be able to connect to the SAP system (either on-prem or in a cloud)

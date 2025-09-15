@@ -1,6 +1,6 @@
 # Leveraging Azure API Management and vnet Peering (e.g. SAP S/4HANA Prviate Cloud or Native)
+![To Do - Intro and Overview Video]()
 
-![Architecture - Azure vNet Peering](./AzureAPIMVnet.jpg)
 
 ## Why would you use this scenario?
 A lot of customers are running their SAP Systems on Azure, either operating it by themselves or in a RISE / SAP S/4HANA Private Cloud Edition setup. 
@@ -15,6 +15,8 @@ Some of the Azure services frequenetly used are Logic Apps and Azure API Managem
 
 
 * [Set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector](https://learn.microsoft.com/en-us/power-platform/sap/connect/entra-id-apim-oauth)
+
+![Architecture - Azure vNet Peering](./AzureAPIMVnet.jpg)
 
 
 
