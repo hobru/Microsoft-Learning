@@ -1,6 +1,7 @@
 # Leveraging On-premises data gateway with access to BAPI / RFCs and OData Services
+![To Do - Intro and Overview Video]()
 
-![Architecture - On-Premises Data Gateway](./APIM+CloudConnector-OPDG.jpg)
+
 
 ## Why would you use this scenario?
 A lot of customers come from the Power Platform and SAP integration and have already created Power BI Reports, Power Apps and Power Automate flows connecting to SAP systems. 
@@ -10,6 +11,7 @@ Quite often BAPIs and RFC are used to fetch and update information in the SAP sy
 Similar like the SAP Cloud Connector, the on-premises data gateway enables the access to the SAP system from Power Platform and Copilot Studio, even if there are firewalls in place. 
 
 This setup can be used if you want to connect to BAPIs/RFC or are also using other SAP integration from the Power Platform. 
+![Architecture - On-Premises Data Gateway](./APIM+CloudConnector-OPDG.jpg)
 
 ## Setup & Configuration
 To enable access to the SAP backend system, the on-premises data gateway has to be installed on a Windows server, which has access to your SAP system. This could be your client on which als the SAP GUI is running (which is not recommended for a production use) or a dedicated machine that is connected to the SAP system.
@@ -18,8 +20,10 @@ To enable access to the SAP backend system, the on-premises data gateway has to 
 During the installation you have to log-in with a user from your Power Platform environment to establish the trust and connection with this environment. Afterwards the gateway and connection status can be seen in your environment. 
 ![Connectivity status of OPDG in Power Platform environment]()
 
-In addition to the on-premises data gateway, the SAP .Net Connector to be installed as well, if you want to integrate with BAPIs and RFCs. The SAP .Net Connector translates the incoming HTTP requests in the DIAG protocol used by SAPs propriatary APIs. 
+In addition to the on-premises data gateway, the SAP .Net Connector has to be installed as well, if you want to integrate with BAPIs and RFCs. The SAP .Net Connector translates the incoming HTTP requests in the DIAG protocol used by SAPs propriatary APIs. 
 ![Installation of SAP .Net Connector]()
+
+* [Download On-prem data Gateway](https://www.microsoft.com/en-us/download/details.aspx?id=53127&msockid=08f9467b101a6a152949535411a26b2f) 
 
 
 ### Agent & Copilot Development 
