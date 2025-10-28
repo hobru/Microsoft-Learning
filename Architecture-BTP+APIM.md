@@ -12,6 +12,7 @@ In most cases the Copilot would call a REST based API (OData, REST, SOAP). This 
 SAP BTP then forwards the request via the SAP Cloud Connector to the SAP Backend System. 
 
 ![Architecture](./APIM+CloudConnector-BTP+APIM.jpg)
+
 (This architecture only depicts one path; You can use multiple variations for the connection)
 
 ## Setup & Configuration
@@ -26,7 +27,7 @@ Using the SAP OData Connector you can also implement Single Sign-On from Entra I
 * [Power Platform + SAP: Updates via SAP OData services](https://youtu.be/mez5qIZmrfM?si=b22hyxSTlspy-HR_)
 
 ### Authentication
-In most cases the expecation from users using Copilot is that there is a principal propagation in place, meaning the user that is logged on to Copilot, is also the user that is authenticated in the SAP backend system.This not only ensures that auditing and activity traces in the SAP system are tracked in the user context, but also that the user only has access to the data that he or she is allowed to have. 
+In most cases the expectation from users using Copilot is that there is a principal propagation in place, meaning the user that is logged on to Copilot, is also the user that is authenticated in the SAP backend system.This not only ensures that auditing and activity traces in the SAP system are tracked in the user context, but also that the user only has access to the data that he or she is allowed to have. 
 
 For all integration scenarios via the SAP Business Technology Platform Principal Propagation flows are documented.  
 

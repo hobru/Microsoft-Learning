@@ -29,7 +29,7 @@ In addition to the on-premises data gateway, the SAP .Net Connector has to be in
 For this setup, Copilot agents are most likely developed using Copilot Studio, which has access not only to the on-premises data gateway, but also comes with several SAP ERP Connectors, that provide access to the BAPIs and RFCs exposed by the SAP System. 
 ![SAP ERP Connector in Copilot Studio](./SAPERPConnectors.jpg)
 
-> Note: 
+> [!Note]: 
 > Although we see SAP and the on-premises data gateway mainly used for BAPI and RFCs, you can also use it to expose SAP OData services.  
 ![SAP OData Connector in Copilot Studio](./SAPODataConnector.jpg)
 

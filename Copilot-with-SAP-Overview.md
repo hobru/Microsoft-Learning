@@ -8,7 +8,7 @@ To get started, take a look at the [recommended architecture options](#recommend
 
 
 ## Building an Agent
-> Note: 
+> [!Note]: 
 > This section is from  https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/3-agent-development
 
 ### Choosing an agent development solution covers multiple facattes. 
@@ -82,29 +82,6 @@ The use of Knowledge sources allows users to enrich the Copilot with SAP specifi
 Microsoft Copilot Studio is a powerful, low-code platform that enables organizations to build, customize, and deploy AI-powered copilots tailored to their unique business needs. With seamless integration across Microsoft 365 and a vast library of over 1,000 prebuilt connectors—including enterprise systems like SAP, ServiceNow, Salesforce, and Dataverse—Copilot Studio allows users to automate complex workflows, access real-time data, and deliver intelligent, context-aware experiences. Whether you're streamlining operations, enhancing customer service, or empowering employees with self-service tools, Copilot Studio provides the flexibility and scalability to bring AI into every corner of your business.
 
 
-#### [!!ToDo!!!] Azure AI Foundry & M365 Agents Toolkit
-https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry
-
-Knowledge tools
-To keep your AI agent informed with richer context from various data sources. The Foundry Agent Service has covered a wide range of data types:
-
-private data: Azure AI Search, File Search, Microsoft Fabric, and more
-public web data: Grounding with Bing Search
-licensed data: Tripadvisor, Morningstar
-unstructured data: Azure AI Search, File Search
-structured data: Microsoft Fabric and more
-Action tools
-To streamline workflows with your AI agent with capabilities to take actions. The Foundry Agent Service provides different action tools for you with different level of flexibility, control, and ease of integration:
-
-Deep Research tool: Web-based integrated deep research pipeline with the o3-deep-research model and Grounding with Bing Search.
-Azure Logic Apps: Low-code / no-code solution to add a workflow to your AI Agent
-OpenAPI Spec tool: Bring an existing OpenAPI specification of a service API you want to add to your AI agent, with no or minor changes.
-MCP tool: Bring an existing Model Context Protocol (MCP) endpoint that you want to add to your AI agent.
-Function calling: Write your own custom, stateless functions to define the expected behaviors.
-Azure Functions: Write and manage your own custom, stateful functions.
-Browser Automation: Perform real-world browser tasks through natural language prompts.
-
-
 #### Microsoft 365 Agent Toolkit
 Microsoft 365 Agents Toolkit is a suite of tools for building enterprise-ready agents and apps that work across Microsoft 365 Copilot, Teams, Office, web, and other third-party messaging channels. 
 
@@ -152,7 +129,7 @@ In addition OData supports the latest authentication protocols like OAuth and SA
 For Copilot scenarios, there is a common support across all tools. 
 * Agent Builder is supporting OData services via the Knowledge Source functionality, enabling end-users to use SAP systems as a knowledge source
 * In addition to the Knowledge Source functionality, Copilot Studio has a dedicated SAP OData Connector which supports all CRUD operations supported by the underlying SAP OData services. In addition detailed documentation about implementing Single Sign-On / Principal Propagation to mutliple SAP Systems is avaialble. 
-* Azure AI Foundry supports OData services both via a low-code connector and via pro-code development extensions [Link!!!]()
+* Azure AI Foundry supports OData services both via a low-code connector and via pro-code development extensions 
 * The Agent Toolkit allows developers to use multiple libraries to connect to OData services
 
 ### HTTP (SOAP & REST)
@@ -216,7 +193,7 @@ Since the tools and protocols mentioned above are indifferent of the actual back
 | SAP SuccessFactors | OData / HTTP | OAuth |
 
 ## Recommended  Integration Patterns
-The following list provides an overview of reference architectures. There is not only one, because it depends very much on your existing infrastructure and what components you are using. In the simplest form, you can just use Copilot Studio, use the SAP OData Connector and connect directly to your SAP system in the cloud (Option #1)
+The following list provides an overview of reference architectures. There is not only one, because it depends very much on your existing infrastructure and what components you are using. In the simplest form (for a first POC), you can just use Copilot Studio, use the SAP OData Connector and connect directly to your SAP system in the cloud ([Option #1](https://github.com/hobru/Microsoft-Learning/blob/main/Architecture-Demo.md))
 
 ### Recommendation Matrix
 - Are you running your SAP system on Azure including RISE? Do you have a good Azure practice in house? [Leveraging Azure API Management and vnet Peering (e.g. SAP S/4HANA Prviate Cloud or Native)](Architecture-APIM+vnet.md)
