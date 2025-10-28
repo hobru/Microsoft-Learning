@@ -190,7 +190,7 @@ Since the tools and protocols mentioned above are indifferent of the actual back
 | R/3, SAP ECC | BAPI/RFC | SAP UID / Kerberos |
 | S/4HANA on-prem / native / private cloud | BAPI/RFC, OData | SAP UID / Kerberos |
 | S/4HANA public cloud | OData | OAuth |
-| SAP SuccessFactors | OData / HTTP | OAuth |
+| SAP SuccessFactors | OData / HTTPS | OAuth |
 
 ## Recommended  Integration Patterns
 The following list provides an overview of reference architectures. There is not only one, because it depends very much on your existing infrastructure and what components you are using. In the simplest form (for a first POC), you can just use Copilot Studio, use the SAP OData Connector and connect directly to your SAP system in the cloud ([Option #1](https://github.com/hobru/Microsoft-Learning/blob/main/Architecture-Demo.md))
