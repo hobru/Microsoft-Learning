@@ -8,7 +8,7 @@ To get started, take a look at the [recommended architecture options](#recommend
 
 
 ## Building an Agent
-> [!Note]: 
+> [!Note]
 > This section is from  https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/3-agent-development
 
 ### Choosing an agent development solution covers multiple facattes. 
