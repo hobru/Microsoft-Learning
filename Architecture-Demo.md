@@ -7,7 +7,7 @@ The assumption is that you have already an SAP OData Service, that is accessible
 
 In the following steps, we will use the public SAP Gateway Development system. This is a public hosted system from SAP, that exposes the Enterprise Procurement Model (EPM) via the GWSAMPLE_BASIC OData service. [See also](https://developers.sap.com/tutorials/odata-02-exploration-epm..html) If you do not have access yet, you can register for the [SAP Gateway Demo System here](https://developers.sap.com/tutorials/gateway-demo-signup.html)
 
-> [!Note]:
+> [!Note]
 > Since the SAP Gateway Development system is being [de-commissioned](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-gateway-demo-system-will-be-de-commissioned/ba-p/13353480) the recommendation for now is just to use any other public OData service (e.g. https://services.odata.org/v4/TripPinServiceRW). An alternative is to use the SAP Business Accelerator Hub, register and use an OData service for Read-only scenarios. 
 
 ## Setup & Configuration
