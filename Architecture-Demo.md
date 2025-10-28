@@ -1,5 +1,4 @@
 # SAP System publically available (most likely a demo scenario)
-![To Do - Intro and Overview Video]()
 
 Unlike the other architectures described here, this is your Quick-Start architecture. The goal is to quickly show you how to get started and see the Copilot Studio and SAP integration in action. For production ready scenarios, please look at the other architectures as well.  
 

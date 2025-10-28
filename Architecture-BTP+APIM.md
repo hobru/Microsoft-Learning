@@ -1,5 +1,4 @@
 # Leveraging SAP Business Technology Platform (with SAP API Management and SAP Cloud Connector)
-![To Do - Intro and Overview Video]()
 
 ## Why would you use this scenario?
 A lot of customers that want to build a Copilot connected to SAP, already have the SAP Business Technology Platform in place. The huge benefit here is, that integrations to the SAP Backend system -- often on-prem -- are already established using SAP Cloud Connector. 

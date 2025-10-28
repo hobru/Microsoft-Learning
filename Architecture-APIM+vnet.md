@@ -1,5 +1,4 @@
 # Leveraging Azure API Management and vnet Peering (e.g. SAP S/4HANA Prviate Cloud or Native)
-![To Do - Intro and Overview Video]()
 
 
 ## Why would you use this scenario?

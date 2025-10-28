@@ -6,6 +6,23 @@ Developing Copilot Agents with SAP data depends very much on the infrastructure,
 
 To get started, take a look at the [recommended architecture options](#recommendation-matrix)
 
+
+## Building an Agent
+> Note: 
+> This section is from  https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/3-agent-development
+
+### Choosing an agent development solution covers multiple facattes. 
+
+With such a wide range of available tools and frameworks, it can be challenging to decide which ones to use. Use the following considerations to help you identify the right choices for your scenario:
+
+* For business users with little or no software development experience, Copilot Studio agent builder in Microsoft 365 Copilot Chat provides a way to create simple declarative agents that automate everyday tasks. This approach can empower users across an organization to benefit from AI agents with minimal impact on IT.
+* If business users have sufficient technical skills to build low-code solutions using Microsoft Power Platform technologies, Copilot Studio enables them to combine those skills with their business domain knowledge and build agent solutions that extend the capabilities of Microsoft 365 Copilot or add agentic functionality to common channels like Microsoft Teams, Slack, or Messenger.
+* When an organization needs more complex extensions to Microsoft 365 Copilot capabilities, professional developers can use the Microsoft 365 Agents SDK to build agents that target the same channels as Copilot Studio.
+* To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Foundry Agent Service.
+* Use the Microsoft Agent Framework to develop single, standalone agents or build multi-agent solutions that use different orchestration patterns.
+
+
+
 ## Overview
 When building Copilot Agents (whether integrated in Microsoft 365 Copilot or autonmous agents) for SAP, there are multiple options doing that. On a high level, the agents will leverage the following components:
 - User Interfaces & Entry Points

@@ -1,5 +1,4 @@
 # Leveraging On-premises data gateway with access to BAPI / RFCs and OData Services
-![To Do - Intro and Overview Video]()
 
 
 
@@ -15,22 +14,24 @@ This setup can be used if you want to connect to BAPIs/RFC or are also using oth
 
 ## Setup & Configuration
 To enable access to the SAP backend system, the on-premises data gateway has to be installed on a Windows server, which has access to your SAP system. This could be your client on which als the SAP GUI is running (which is not recommended for a production use) or a dedicated machine that is connected to the SAP system.
-![on-premises data Gateway installed next to the SAP GUI]()
+![on-premises data Gateway installed next to the SAP GUI](./OPDG-installed.jpg)
 
 During the installation you have to log-in with a user from your Power Platform environment to establish the trust and connection with this environment. Afterwards the gateway and connection status can be seen in your environment. 
-![Connectivity status of OPDG in Power Platform environment]()
+![Connectivity status of OPDG in Power Platform environment](./RegisteredGateway.jpg)
 
 In addition to the on-premises data gateway, the SAP .Net Connector has to be installed as well, if you want to integrate with BAPIs and RFCs. The SAP .Net Connector translates the incoming HTTP requests in the DIAG protocol used by SAPs propriatary APIs. 
-![Installation of SAP .Net Connector]()
+![Installation of SAP .Net Connector](./SAPNetConnector.jpg)
 
 * [Download On-prem data Gateway](https://www.microsoft.com/en-us/download/details.aspx?id=53127&msockid=08f9467b101a6a152949535411a26b2f) 
 
 
 ### Agent & Copilot Development 
 For this setup, Copilot agents are most likely developed using Copilot Studio, which has access not only to the on-premises data gateway, but also comes with several SAP ERP Connectors, that provide access to the BAPIs and RFCs exposed by the SAP System. 
-![SAP ERP Connector in Copilot Studio]()
+![SAP ERP Connector in Copilot Studio](./SAPERPConnectors.jpg)
 
-> Note: Although we see SAP and the on-premises data gateway mainly used for BAPI and RFCs, you can also use it to expose SAP OData services.  
+> Note: 
+> Although we see SAP and the on-premises data gateway mainly used for BAPI and RFCs, you can also use it to expose SAP OData services.  
+![SAP OData Connector in Copilot Studio](./SAPODataConnector.jpg)
 
 ### Authentication
 With BAPIs and RFC an authentication using Kerberos and X.509 certificates is possible. This enables users to authenticate to  Copilot Studio with their "normal" Entra-ID credentials and then access their SAP system with the propagated user credentials. 
