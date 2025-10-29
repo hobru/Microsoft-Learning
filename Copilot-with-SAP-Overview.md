@@ -133,9 +133,9 @@ For Copilot scenarios, there is a common support across all tools.
 * The Agent Toolkit allows developers to use multiple libraries to connect to OData services
 
 ### HTTP (SOAP & REST)
-A lot of older or aquired SAP Systems support SOAP and REST services. These protocols are support via an HTTP Connector or a custom connector in Copilot Studio. Via these connector also other HTTP protocols are supported. 
+A lot of older or aquired SAP Systems support SOAP and REST services. These protocols are support via an HTTP Connector or a custom connector in Copilot Studio. Via these connector also other HTTP(S) protocols are supported. 
 
-For pro-code integrations via Azure AI Foundry or the Agent Toolkit HTTP calls can be done via commonly available packages. 
+For pro-code integrations via Azure AI Foundry or the Agent Toolkit HTTP(S) calls can be done via commonly available packages. 
 
 ### BAPI / RFC
 SAP ECC and SAP S/4HANA on-prem / private cloud edition systems still support and offer BAPI and RFC. These propriatary protocols offer a very efficient, but closed integration with other system. The Agent Toolkit can use the SAP .Net Connector SDK to connect to these APIs, but an enterprise ready impelmentation can be complicated. 
@@ -162,7 +162,7 @@ A lot of customers already have services like SAP API Management or SAP Integrat
 All Copilot tools can leverage APIs that are exposed via SAP Business Technology Platform. Using the SAP Cloud Connector (see [here](#sap-cloud-connector)) even SAP systems behind Firewalls can be accessed in a secure manner. Leveraging tools like SAP API Management additional features like Throttling, Quota Handling or also authentication steps can be performed.  
 
 #### Azure Integration Services
-Azure provides several tools to integrate with backend systems like SAP. Most prominent in the Copilot Studio scenario is Azure API Management and Azure Logic Apps. Both provide an easy way to connect to APIs (in the case of Logic Apps both HTTP and BAPIs) and control the access to the SAP system. A huge benefit of this setup is if your SAP System is also running on Azure. In this case the connectivity can be further secured by using vnet peering. 
+Azure provides several tools to integrate with backend systems like SAP. Most prominent in the Copilot Studio scenario is Azure API Management and Azure Logic Apps. Both provide an easy way to connect to APIs (in the case of Logic Apps both HTTP(s) and BAPIs) and control the access to the SAP system. A huge benefit of this setup is if your SAP System is also running on Azure. In this case the connectivity can be further secured by using vnet peering. 
 
 ### Proxies / Connectivity
 In a lot of cases the SAP System is protected by a Firewall. So access from the internet (e.g. from M365 Copilot) is not possible directly. Instead a proxy needs to be installed. 
@@ -172,7 +172,7 @@ In a lot of cases the SAP System is protected by a Firewall. So access from the 
 For a lot of SAP customers, the SAP Business Technology Platform with either SAP Integration Suite or a simple App Router is already in place. In this case, the SAP Cloud Connector is probably used to bridge the Firewall-Protection and to be able to connect to the SAP system (either on-prem or in a cloud)
 
 #### On-Premise Data Gateway
-The on-premise data gateway (OPDG) has been around for many years mainly in the context of the Power Platform. OPDG not only allows you to bridge the Firewall-Protection, but it also enables you to translate the SAP DIAG protocol used by BAPI / RFCs into HTTP calls that can be used by Copilot Studio / Power Platform. 
+The on-premise data gateway (OPDG) has been around for many years mainly in the context of the Power Platform. OPDG not only allows you to bridge the Firewall-Protection, but it also enables you to translate the SAP DIAG protocol used by BAPI / RFCs into HTTP(s) calls that can be used by Copilot Studio / Power Platform. 
 
 If you are looking to leverage BAPI / RFC you have to install the OPDG along with the SAP .Net Connector (download here, SAP User is required). This will not only allow you to access the SAP system behind the fireall, but also leverage BAPIs / RFCs in your system. 
 If you want to connect to OData services behind a firewall, the OPDG - similar like the SAP Cloud Connector - also allows you to do that. 
