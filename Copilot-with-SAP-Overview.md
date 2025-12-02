@@ -4,7 +4,7 @@ Developing Copilot Agents with SAP data depends very much on the infrastructure,
 * Why would you choose one options vs. another? 
 * How can you get started to implement these integrations?
 
-To get started, take a look at the [recommended architecture options](#recommendation-matrix)
+👉 **To get started, take a look at the [recommended architecture options](#recommendation-matrix)**
 
 
 ## Building an Agent
