@@ -7,3 +7,7 @@
 * [Enable Microsoft Copilot and Teams to Pass Requests to Joule](https://community.sap.com/t5/technology-blog-posts-by-sap/enable-microsoft-copilot-and-teams-to-pass-requests-to-joule/ba-p/14109137)
 * [Integrate Joule and Microsoft 365 Copilot - SAP Discovery Center](https://discovery-center.cloud.sap/missiondetail/4741/5025/)
 * [Get help - SAP Note 3722273 - Joule and MS Copilot Integration](https://me.sap.com/notes/3722273)
+
+
+## How to Troubleshoot
+* [Joule - Monitoring and Troubleshooting](http://help.sap.com/docs/joule/serviceguide/troubleshooting)
