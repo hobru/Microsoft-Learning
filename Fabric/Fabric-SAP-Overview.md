@@ -82,20 +82,9 @@ SAP Datasphere and Microsoft Fabric can work together:
 
 A typical Fabric + SAP architecture follows this pattern:
 
-```
-┌──────────────────┐       ┌────────────────────┐       ┌──────────────────────┐
-│   SAP Systems    │       │  Integration Layer  │       │  Microsoft Fabric    │
-│                  │       │  (optional)         │       │                      │
-│  S/4HANA         │──────►│  SAP BTP /          │──────►│  OneLake             │
-│  ECC             │  OData│  Datasphere         │  OData│    ├─ Bronze (raw)   │
-│  SuccessFactors  │  RFC  │       or            │  Files│    ├─ Silver (clean) │
-│  BW              │  CDC  │  Azure Data Factory │  CDC  │    └─ Gold (curated) │
-│  HANA            │       │  Azure ADLS         │       │                      │
-│                  │       │                     │       │  Power BI            │
-│                  │       │                     │       │  Notebooks           │
-│                  │       │                     │       │  Real-Time Analytics │
-└──────────────────┘       └────────────────────┘       └──────────────────────┘
-```
+![Fabric SAP Architecture Overview](Fabric-SAP-Overview.jpg)
+
+> 📥 [Download editable draw.io diagram](Fabric-SAP-Overview.drawio)
 
 ### Identity & Security
 

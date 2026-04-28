@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" modified="2026-04-28T15:30:00.000Z" agent="Copilot" version="24.0.0" type="device">
+  <diagram id="btp-datasphere" name="BTP / Datasphere Data Flow">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- SAP Backend Group -->
+        <mxCell id="sap-group" value="SAP Backend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="sap-s4" value="S/4HANA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="150" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sap-ecc" value="ECC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="195" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sap-bw" value="BW" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="240" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sap-sf" value="SuccessFactors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="285" width="160" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- SAP BTP Group -->
+        <mxCell id="btp-group" value="SAP BTP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="260" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="btp-ds" value="Datasphere&#xa;(model &amp; curate)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="410" y="150" width="200" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="btp-or" value="or" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=2;fontColor=#999;" vertex="1" parent="1">
+          <mxGeometry x="480" y="200" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="btp-is" value="Integration Suite" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="410" y="225" width="200" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="btp-apim" value="API Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="410" y="270" width="200" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="btp-cc" value="Cloud Connector&#xa;(for on-prem access)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="410" y="320" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Fabric Group -->
+        <mxCell id="fab-group" value="Microsoft Fabric" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="100" width="220" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fab-onelake" value="OneLake" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="150" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fab-lh" value="Lakehouse" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="790" y="195" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fab-wh" value="Warehouse" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="790" y="240" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fab-pbi" value="Power BI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="790" y="285" width="160" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#333;" edge="1" source="sap-group" target="btp-group" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1-label" value="RFC / OData" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#333;" vertex="1" connectable="0" parent="arrow1">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#333;" edge="1" source="btp-group" target="fab-group" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2-label" value="OData / Files" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#333;" vertex="1" connectable="0" parent="arrow2">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

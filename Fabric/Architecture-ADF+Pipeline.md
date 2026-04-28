@@ -35,19 +35,9 @@ If you already have ADF pipelines or prefer to manage pipelines in Azure:
 
 ### Data Flow
 
-```
-┌──────────────┐       ┌──────────────────────┐       ┌──────────────────┐
-│ SAP Systems  │       │  Azure / Fabric       │       │ Microsoft Fabric │
-│              │       │  Pipelines            │       │                  │
-│ S/4HANA      │──────►│                       │──────►│ OneLake          │
-│ ECC          │  CDC  │  Copy Data            │       │   Lakehouse      │
-│ BW           │  ODP  │  Data Flows           │       │   Warehouse      │
-│ HANA         │  SQL  │  Notebooks            │       │   Power BI       │
-│              │       │                       │       │                  │
-└──────────────┘       │  + SHIR / Gateway     │       └──────────────────┘
-                       │  (for on-prem access) │
-                       └──────────────────────┘
-```
+![ADF Pipeline Data Flow](Architecture-ADF+Pipeline.jpg)
+
+> 📥 [Download editable draw.io diagram](Architecture-ADF+Pipeline.drawio)
 
 ### Self-Hosted Integration Runtime (SHIR)
 

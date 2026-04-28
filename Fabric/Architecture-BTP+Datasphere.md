@@ -40,20 +40,9 @@ If you don't use SAP Datasphere but have SAP BTP with Integration Suite or API M
 
 ### Data Flow
 
-```
-┌──────────────┐       ┌──────────────────────┐       ┌──────────────────┐
-│ SAP Backend  │       │  SAP BTP              │       │ Microsoft Fabric │
-│              │       │                       │       │                  │
-│ S/4HANA      │──────►│  Datasphere           │──────►│ OneLake          │
-│ ECC          │  RFC  │    (model & curate)   │ OData │   Lakehouse      │
-│ BW           │  OData│       or              │ Files │   Warehouse      │
-│ SF           │       │  Integration Suite    │       │   Power BI       │
-│              │       │  API Management       │       │                  │
-└──────────────┘       │                       │       └──────────────────┘
-                       │  Cloud Connector      │
-                       │  (for on-prem access) │
-                       └──────────────────────┘
-```
+![BTP Datasphere Data Flow](Architecture-BTP+Datasphere.jpg)
+
+> 📥 [Download editable draw.io diagram](Architecture-BTP+Datasphere.drawio)
 
 ## Authentication
 
