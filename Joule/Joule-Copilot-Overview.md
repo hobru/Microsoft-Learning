@@ -1,13 +1,133 @@
-# Joule & Copilot Overview
+# Joule & Microsoft 365 Copilot Integration
 
-## Links
+SAP Joule and Microsoft 365 Copilot provide a bi-directional integration that allows end-users to access SAP capabilities directly from within Microsoft 365 Copilot and Microsoft Teams — without the need to build a custom agent. This page covers what the integration does, how to set it up, and how to troubleshoot it.
+
+> [!Note]
+> This integration is a managed SAP & Microsoft feature. It is different from building custom Copilot agents with Copilot Studio or Azure AI Foundry that access SAP data. For custom agent scenarios, see the [Copilot Studio & SAP](../CopilotStudio/Copilot-with-SAP-Overview.md) documentation.
+
+## What Is the Joule ↔ Copilot Integration?
+
+The Joule integration brings SAP's digital assistant, Joule, into the Microsoft 365 Copilot experience. Through this integration:
+
+- **Users in Microsoft 365 Copilot or Teams** can ask SAP-related questions (e.g. "Show me my open purchase orders") and the request is routed to SAP Joule for processing.
+- **Users in SAP Joule** can leverage Microsoft 365 context when interacting with Joule (bi-directional).
+
+The integration is based on a trust relationship between SAP Cloud Identity Services and Microsoft Entra ID. SAP handles the natural language processing for SAP-specific tasks, while Microsoft handles the Copilot/Teams user experience.
+
+## Key Scenarios & Use Cases
+
+| Scenario | Example |
+| --- | --- |
+| **HR Self-Service** | Ask Copilot "What is my remaining leave balance?" → routed to Joule → answered from SAP SuccessFactors |
+| **Procurement** | "Show me my open purchase requisitions" → Joule retrieves data from SAP S/4HANA Cloud |
+| **Finance** | "What is the status of invoice 4500001234?" → answered from SAP S/4HANA Cloud |
+| **IT & Admin** | "Create a support ticket for my laptop" → routed to Joule for processing |
+
+> [!Important]
+> The Joule ↔ Copilot integration currently supports scenarios provided by SAP's Joule capabilities. It does **not** yet extend to custom-built agents (e.g. agents built in Copilot Studio).
+
+## Supported SAP Applications
+
+The following SAP applications support the Joule integration with Microsoft 365 Copilot (check [SAP's documentation](https://help.sap.com/docs/joule/integrating-joule-with-sap/integrating-joule-with-microsoft-365-copilot) for the latest list):
+
+- SAP S/4HANA Cloud, public edition
+- SAP SuccessFactors
+- SAP Ariba (selected scenarios)
+- Additional SAP cloud applications as supported by Joule
+
+## Prerequisites
+
+Before setting up the integration, ensure you have:
+
+- **Microsoft 365 Copilot** license for end-users
+- **SAP BTP** account with SAP Cloud Identity Services (IAS) configured
+- **SAP Joule** enabled for your SAP applications
+- **Microsoft Entra ID** (Azure AD) tenant with admin access
+- Network connectivity between SAP BTP and Microsoft Entra ID (typically over the internet)
+
+## Architecture Overview
+
+The integration follows a trust-based architecture:
+
+```
+┌──────────────────┐         ┌─────────────────────┐         ┌──────────────────┐
+│  Microsoft 365   │         │   Identity & Trust   │         │   SAP Backend    │
+│  Copilot / Teams │◄───────►│                      │◄───────►│                  │
+│                  │         │  Microsoft Entra ID  │         │  SAP Joule       │
+│  User asks SAP   │  Agent  │        ↕              │  OIDC/  │  (on SAP BTP)    │
+│  question        │  routing│  SAP Cloud Identity  │  SAML   │       │          │
+│                  │─────────│  Services (IAS)      │─────────│       ▼          │
+│                  │         │                      │         │  S/4HANA Cloud   │
+│                  │         │                      │         │  SuccessFactors  │
+│                  │         │                      │         │  Ariba, ...      │
+└──────────────────┘         └─────────────────────┘         └──────────────────┘
+```
+
+### Key Components
+
+1. **Microsoft Entra ID** — authenticates the Microsoft 365 user and establishes trust with SAP Cloud Identity Services
+2. **SAP Cloud Identity Services (IAS)** — acts as the identity proxy on the SAP side; maps the Microsoft user to an SAP user
+3. **SAP Joule (on BTP)** — receives the user request, processes it against the connected SAP application, and returns the result
+4. **Microsoft 365 Copilot / Teams** — provides the user interface and routes SAP-related requests to the Joule agent
+
+### Identity Flow
+
+1. User asks an SAP-related question in Microsoft 365 Copilot or Teams
+2. Copilot identifies the Joule agent and routes the request
+3. The user's identity is federated from Microsoft Entra ID → SAP Cloud Identity Services
+4. SAP Cloud Identity Services maps the user to the corresponding SAP user
+5. Joule processes the request against the SAP backend application
+6. The response is returned to the user in Copilot / Teams
+
+## Setup & Configuration
+
+### Step 1: Configure SAP Cloud Identity Services
+
+- Set up SAP Cloud Identity Services (IAS) as the identity provider for your SAP BTP subaccount
+- Establish a trust relationship between SAP IAS and Microsoft Entra ID
+- Configure user mapping (Microsoft Entra ID user ↔ SAP user)
+
+👉 Detailed guide: [Configuring SAP Cloud Identity Services and Microsoft Entra ID for Joule](https://community.sap.com/t5/technology-blog-posts-by-sap/configuring-sap-cloud-identity-services-and-microsoft-entra-id-for-joule/ba-p/14105743)
+
+### Step 2: Configure Microsoft Entra ID
+
+- Register the SAP Joule application in Microsoft Entra ID
+- Configure the necessary API permissions and consent
+- Set up the enterprise application for Single Sign-On
+
+### Step 3: Enable Joule Agent in Copilot / Teams
+
+- Enable the Joule agent in the Microsoft 365 Admin Center or Teams Admin Center
+- Assign the agent to the relevant users or groups
+- Test the integration by asking an SAP-related question in Copilot or Teams
+
+👉 Detailed guide: [Enable Microsoft Copilot and Teams to Pass Requests to Joule](https://community.sap.com/t5/technology-blog-posts-by-sap/enable-microsoft-copilot-and-teams-to-pass-requests-to-joule/ba-p/14109137)
+
+👉 End-to-end walkthrough: [Integrate Joule and Microsoft 365 Copilot - SAP Discovery Center Mission](https://discovery-center.cloud.sap/missiondetail/4741/5025/)
+
+## Limitations & Known Issues
+
+- The integration is limited to **SAP Joule's built-in capabilities** — custom skills or agents built in Copilot Studio are not routed through this integration
+- User mapping between Microsoft Entra ID and SAP must be correctly configured; mismatches will result in authentication errors
+- Availability depends on the SAP applications and Joule skills enabled in your landscape
+- Check [SAP Note 3722273](https://me.sap.com/notes/3722273) for the latest known issues and fixes
+
+## Troubleshooting
+
+| Symptom | Possible Cause | Resolution |
+| --- | --- | --- |
+| Joule agent not visible in Copilot/Teams | Agent not enabled in admin center | Enable via Microsoft 365 or Teams Admin Center |
+| Authentication error when routing to Joule | Trust relationship misconfigured | Verify IAS ↔ Entra ID trust and user mapping |
+| "No SAP data found" response | User not mapped to SAP user | Check user provisioning in SAP Cloud Identity Services |
+| Timeout or no response | Network/connectivity issue | Check BTP connectivity and service health |
+
+👉 SAP troubleshooting guide: [Joule - Monitoring and Troubleshooting](http://help.sap.com/docs/joule/serviceguide/troubleshooting)
+
+## Links & Resources
+
 * [Integrating Joule with Microsoft 365 Copilot - Official Documentation](https://help.sap.com/docs/joule/integrating-joule-with-sap/integrating-joule-with-microsoft-365-copilot)
-
 * [Configuring SAP Cloud Identity Services and Microsoft Entra ID for Joule](https://community.sap.com/t5/technology-blog-posts-by-sap/configuring-sap-cloud-identity-services-and-microsoft-entra-id-for-joule/ba-p/14105743)
 * [Enable Microsoft Copilot and Teams to Pass Requests to Joule](https://community.sap.com/t5/technology-blog-posts-by-sap/enable-microsoft-copilot-and-teams-to-pass-requests-to-joule/ba-p/14109137)
 * [Integrate Joule and Microsoft 365 Copilot - SAP Discovery Center](https://discovery-center.cloud.sap/missiondetail/4741/5025/)
 * [Get help - SAP Note 3722273 - Joule and MS Copilot Integration](https://me.sap.com/notes/3722273)
-
-
-## How to Troubleshoot
 * [Joule - Monitoring and Troubleshooting](http://help.sap.com/docs/joule/serviceguide/troubleshooting)
