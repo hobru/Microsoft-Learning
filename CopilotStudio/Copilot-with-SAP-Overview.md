@@ -6,6 +6,8 @@ Developing Copilot Agents with SAP data depends very much on the infrastructure,
 
 👉 **To get started, take a look at the [recommended architecture options](#recommendation-matrix)**
 
+> [!Important]
+> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
 
 ## Building an Agent
 > [!Note]
