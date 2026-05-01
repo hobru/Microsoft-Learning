@@ -4,6 +4,9 @@ SAP systems are the operational backbone of many enterprises — managing financ
 
 This page covers how Azure AI Foundry and the broader Microsoft AI stack integrate with SAP to enable agentic AI scenarios.
 
+> [!Important]
+> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
+
 ## The AI Innovation Layers for SAP
 
 Microsoft offers three complementary layers for bringing AI to SAP environments:
