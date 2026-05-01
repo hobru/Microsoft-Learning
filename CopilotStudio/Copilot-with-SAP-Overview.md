@@ -107,6 +107,9 @@ The following table provides an overview of the different tools and their featur
 ### Integration Protocols
 Depending on the kind of backend system and the skills available, you can connect to your SAP system using different protocols. 
 
+> [!Important]
+> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
+
 * The OData protocol has become an open standard and is used not only by all SAP Fiori applications, but also accross the broader SAP stack (e.g. SAP SuccessFactors, SAP Ariba, ...). Not only the latest SAP products (e.g. SAP S/4HANA private-cloud and public-cloud) are supported, but also older SAP systems (SAP ECC) can expose OData services using the SAP Gateway. Finally, programming models like RAP and CAP make the development of new OData services very easy. 
 
 * The BAPI/RFC interfaces have been around since the 1990s. Typically SAP teams have a lot of knowledge and thousands of (custom) BAPI/RFCs are available in customers SAP system. Using dedicated connectors, these APIs can still be consumed in Copilots. 
