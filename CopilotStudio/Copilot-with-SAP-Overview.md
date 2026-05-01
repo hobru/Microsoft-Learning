@@ -47,7 +47,7 @@ Although the adoption of autonomous agents is growing, a lot of agents are still
 #### Microsoft 365 Copilot
 For Copilot, there is the Microsoft 365 Copilot application app which gives you access to all your Microsoft 365 data and also access to your agents. 
 
-Another place to use your apps is in the different M365 applications. You can open Copilot (and your agents) directly from within Outlook, which can be helpful if you just received an email from a supplier asking for the latest status of an order. Or from within Excel, when you work on a long list of Sales Orders and you need to ask your Copilot agent whether there is an update to the status of your Sales Orders.    
+Another place to use your apps is in the different M365 applications. You can open Copilot (and your agents) directly from within Outlook, which can be helpful if you just received an email from a customer asking for the latest status of an order. Or from within Excel, when you work on a long list of Sales Orders and you need to ask your Copilot agent whether there is an update to the status of the Sales Orders.    
 
 
 * [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot)
@@ -136,13 +136,11 @@ For Copilot scenarios, there is a common support across all tools.
 * The Agent Toolkit allows developers to use multiple libraries to connect to OData services
 
 ### HTTP (SOAP & REST)
-A lot of older or aquired SAP Systems support SOAP and REST services. These protocols are support via an HTTP Connector or a custom connector in Copilot Studio. Via these connectors other HTTP protocols are also supported. 
+A lot of older or acquired SAP Systems support SOAP and REST services. These protocols are support via an HTTP Connector or a custom connector in Copilot Studio. Via these connectors other HTTP protocols are also supported. 
 A lot of older or aquired SAP Systems support SOAP and REST services. These protocols are support via an HTTP Connector or a custom connector in Copilot Studio. Via these connectors also other HTTP(S) protocols are supported. 
 
 For pro-code integrations via Azure AI Foundry or the Agent Toolkit, HTTP(S) calls can be done via commonly available packages. 
 ### BAPI / RFC
-A lot of older or acquired SAP Systems support SOAP and REST services. These protocols are support via an HTTP Connector or a custom connector in Copilot Studio. Via these connectors other HTTP protocols are also supported. 
-
 Copilot Studio already provides a well-proven SAP BAPI / RFC connector that allows users to connect to older systems. The support is done using the on-premises Data Gateway together with the [SAP .Net Connector](https://support.sap.com/en/product/connectors/msnet.html) which has to be downloaded with a so called S-User.  
 
 The SAP RFC Connector in Copilot Studio also supports Single Sign-On / Principal Propagation via Kerberos and X.509 certificates. 
