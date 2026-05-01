@@ -21,7 +21,7 @@ With such a wide range of available tools and frameworks, it can be challenging 
 * Use the Microsoft Agent Framework to develop single, standalone agents or build multi-agent solutions that use different orchestration patterns.
 
 > [!Important]
-> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
+> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf)
 
 ## Overview
 When building Copilot Agents (whether integrated in Microsoft 365 Copilot or autonmous agents) for SAP, there are multiple options. On a high level, the agents will leverage the following components:
