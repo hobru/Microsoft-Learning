@@ -2,6 +2,9 @@
 
 Microsoft Fabric is a unified analytics platform that brings together data engineering, data science, real-time analytics, and business intelligence into a single SaaS experience built on OneLake. For SAP customers, Fabric provides powerful options to extract, transform, and analyze SAP data — enabling modern analytics on top of SAP's operational systems.
 
+> [!Important]
+> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
+
 This page provides an overview of:
 * What integration options are available?
 * Why would you choose one option vs. another?
