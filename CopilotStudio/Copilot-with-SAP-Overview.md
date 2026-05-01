@@ -6,9 +6,6 @@ Developing Copilot Agents with SAP data depends very much on the infrastructure,
 
 👉 **To get started, take a look at the [recommended architecture options](#recommendation-matrix)**
 
-> [!Important]
-> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
-
 ## Building an Agent
 > [!Note]
 > This section is from  https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/3-agent-development
@@ -23,7 +20,8 @@ With such a wide range of available tools and frameworks, it can be challenging 
 * To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Foundry Agent Service.
 * Use the Microsoft Agent Framework to develop single, standalone agents or build multi-agent solutions that use different orchestration patterns.
 
-
+> [!Important]
+> Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
 
 ## Overview
 When building Copilot Agents (whether integrated in Microsoft 365 Copilot or autonmous agents) for SAP, there are multiple options. On a high level, the agents will leverage the following components:
