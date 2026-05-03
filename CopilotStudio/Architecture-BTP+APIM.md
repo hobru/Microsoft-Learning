@@ -12,6 +12,9 @@ ms.author: hobruche
 
 # Leveraging SAP Business Technology Platform (with SAP API Management and SAP Cloud Connector)
 
+> [!Important]
+> When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
+
 ## Why would you use this scenario?
 A lot of customers that want to build a Copilot connected to SAP, already have the SAP Business Technology Platform in place. The huge benefit here is, that integrations to the SAP Backend system -- often on-prem -- are already established using SAP Cloud Connector. 
 

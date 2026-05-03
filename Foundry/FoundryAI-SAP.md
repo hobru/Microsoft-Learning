@@ -12,7 +12,10 @@ ms.author: hobruche
 
 # Foundry AI and SAP Overview
 
-SAP systems are the operational backbone of many enterprises — managing financials, supply chain, procurement, HR, and more. With **Azure AI Foundry**, organizations can transform these systems of record into AI-powered systems of intelligence by building enterprise-grade agents that reason over SAP data and take action across business processes.
+> [!Important]
+> When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
+
+SAP systems are the operational backbone of many enterprises— managing financials, supply chain, procurement, HR, and more. With **Azure AI Foundry**, organizations can transform these systems of record into AI-powered systems of intelligence by building enterprise-grade agents that reason over SAP data and take action across business processes.
 
 This page covers how Azure AI Foundry and the broader Microsoft AI stack integrate with SAP to enable agentic AI scenarios.
 

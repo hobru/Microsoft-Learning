@@ -12,6 +12,9 @@ ms.author: hobruche
 
 # SAP & Microsoft AI
 
+> [!Important]
+> When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
+
 📖 **[About SAP with Microsoft AI](./about-sap-with-microsoft-ai.md)** — What is it? Why use it? How to get started?
 
 ## [Joule & Copilot](./Joule/Joule-Copilot-Overview.md)

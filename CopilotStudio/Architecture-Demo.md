@@ -12,6 +12,9 @@ ms.author: hobruche
 
 # SAP System publically available (most likely a demo scenario)
 
+> [!Important]
+> When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
+
 Unlike the other architectures described here, this is your Quick-Start architecture. The goal is to quickly show you how to get started and see the Copilot Studio and SAP integration in action. For production ready scenarios, please look at the other architectures as well.  
 
 ## Why would you use this scenario?

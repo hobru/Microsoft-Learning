@@ -12,7 +12,10 @@ ms.author: hobruche
 
 # Via SAP BTP / Datasphere
 
-This architecture leverages SAP Business Technology Platform (BTP) and/or SAP Datasphere as an intermediate layer between SAP backend systems and Microsoft Fabric.
+> [!Important]
+> When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
+
+This architecture leverages SAP Business Technology Platform (BTP)and/or SAP Datasphere as an intermediate layer between SAP backend systems and Microsoft Fabric.
 
 ## Why Would You Use This Scenario?
 

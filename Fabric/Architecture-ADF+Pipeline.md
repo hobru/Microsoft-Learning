@@ -12,7 +12,10 @@ ms.author: hobruche
 
 # Via Azure Data Factory / Fabric Pipelines
 
-This architecture uses Azure Data Factory (ADF) or Fabric Data Pipelines — which share the same engine — to extract data from SAP systems and land it in Microsoft Fabric's OneLake.
+> [!Important]
+> When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
+
+This architecture uses Azure Data Factory (ADF)or Fabric Data Pipelines — which share the same engine — to extract data from SAP systems and land it in Microsoft Fabric's OneLake.
 
 ## Why Would You Use This Scenario?
 

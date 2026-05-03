@@ -12,6 +12,9 @@ ms.author: hobruche
 
 # About SAP with Microsoft AI
 
+> [!Important]
+> When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
+
 ## What Is Microsoft AI with SAP?
 
 Microsoft AI with SAP refers to the combination of Microsoft's AI platform and tools — including **Microsoft 365 Copilot**, **Copilot Studio**, **Azure AI Foundry**, and **Microsoft Fabric** — with SAP's enterprise systems to create intelligent, AI-powered business experiences on top of SAP data and processes.
