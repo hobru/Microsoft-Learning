@@ -1,0 +1,29 @@
+<mxfile>
+  <diagram name="Joule Copilot Architecture" id="joule">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Microsoft 365 -->
+        <mxCell id="2" value="Microsoft 365&#xa;Copilot / Teams&#xa;&#xa;User asks SAP&#xa;question" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="220" height="150" as="geometry" />
+        </mxCell>
+        <!-- Identity & Trust -->
+        <mxCell id="3" value="Identity &amp; Trust&#xa;&#xa;Microsoft Entra ID&#xa;↕&#xa;SAP Cloud Identity&#xa;Services (IAS)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="250" height="150" as="geometry" />
+        </mxCell>
+        <!-- SAP Backend -->
+        <mxCell id="4" value="SAP Backend&#xa;&#xa;SAP Joule&#xa;(on SAP BTP)&#xa;↓&#xa;S/4HANA Cloud&#xa;SuccessFactors&#xa;Ariba, ..." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="780" y="80" width="220" height="150" as="geometry" />
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="10" value="Agent&#xa;routing" style="edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=10;startArrow=classic;endArrow=classic;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="OIDC /&#xa;SAML" style="edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=10;startArrow=classic;endArrow=classic;" edge="1" source="3" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

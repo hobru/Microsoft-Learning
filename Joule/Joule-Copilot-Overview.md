@@ -63,19 +63,9 @@ Before setting up the integration, ensure you have:
 
 The integration follows a trust-based architecture:
 
-```
-┌──────────────────┐         ┌──────────────────────┐         ┌──────────────────┐
-│  Microsoft 365   │         │   Identity & Trust   │         │   SAP Backend    │
-│  Copilot / Teams │◄───────►│                      │◄───────►│                  │
-│                  │         │  Microsoft Entra ID  │         │  SAP Joule       │
-│  User asks SAP   │  Agent  │        ↕             │  OIDC/  │  (on SAP BTP)    │
-│  question        │  routing│  SAP Cloud Identity  │  SAML   │       │          │
-│                  │─────────│  Services (IAS)      │─────────│       ▼          │
-│                  │         │                      │         │  S/4HANA Cloud   │
-│                  │         │                      │         │  SuccessFactors  │
-│                  │         │                      │         │  Ariba, ...      │
-└──────────────────┘         └──────────────────────┘         └──────────────────┘
-```
+![Joule and Copilot Architecture](Joule-Copilot-Architecture.png)
+
+> 📥 [Download editable draw.io diagram](Joule-Copilot-Architecture.drawio)
 
 ### Key Components
 

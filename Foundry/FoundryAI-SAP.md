@@ -133,23 +133,9 @@ Users interact through a single natural language interface in Teams or Copilot C
 
 A typical Foundry + SAP architecture combines multiple data paths:
 
-```
-┌──────────────────┐       ┌─────────────────────┐       ┌──────────────────────┐
-│  SAP Systems     │       │  Azure AI Foundry    │       │  User Experience     │
-│                  │       │                      │       │                      │
-│  S/4HANA         │──────►│  Agent Service       │──────►│  Microsoft Teams     │
-│  ECC             │ OData │  MCP Tools           │       │  M365 Copilot Chat   │
-│  SuccessFactors  │ RFC   │  Foundry Models      │       │  Power BI            │
-│  Ariba           │ BAPI  │  (GPT-4o, GPT-5.x)  │       │  Custom Apps         │
-│  BW / HANA       │       │                      │       │                      │
-│                  │       │  ┌──────────────┐    │       └──────────────────────┘
-└──────────────────┘       │  │ Fabric       │    │
-                           │  │ OneLake      │    │
-                           │  │ Semantic     │    │
-                           │  │ Models       │    │
-                           │  └──────────────┘    │
-                           └─────────────────────┘
-```
+![Foundry AI and SAP Architecture](FoundryAI-SAP-Architecture.png)
+
+> 📥 [Download editable draw.io diagram](FoundryAI-SAP-Architecture.drawio)
 
 ### SAP Data Sources
 

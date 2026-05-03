@@ -80,40 +80,9 @@ The managed integration between **SAP Joule** and **Microsoft 365 Copilot** prov
 
 ## How These Pieces Fit Together
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        User Experience                                   │
-│   Microsoft 365 Copilot  •  Teams  •  Outlook  •  Websites  •  Apps    │
-└───────────────────────────────────┬─────────────────────────────────────┘
-                                    │
-        ┌───────────────────────────┼───────────────────────────┐
-        │                           │                           │
-        ▼                           ▼                           ▼
-┌───────────────┐       ┌───────────────────┐       ┌───────────────────┐
-│  Joule ↔      │       │  Copilot Studio   │       │  Azure AI Foundry │
-│  Copilot      │       │  Custom Agents    │       │  Enterprise AI    │
-│  (Pre-built)  │       │  (Low/Pro Code)   │       │  (Pro Code)       │
-└───────┬───────┘       └────────┬──────────┘       └────────┬──────────┘
-        │                        │                            │
-        │                        ▼                            ▼
-        │               ┌───────────────────────────────────────────────┐
-        │               │         Integration Layer                      │
-        │               │  OData • RFC/BAPI • MCP • Connectors • ODP    │
-        │               └────────────────────────┬──────────────────────┘
-        │                                        │
-        ▼                                        ▼
-┌───────────────────────────────────────────────────────────────────────┐
-│                          SAP Systems                                    │
-│   S/4HANA  •  ECC  •  SuccessFactors  •  Ariba  •  BTP  •  BW/HANA   │
-└───────────────────────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-                        ┌───────────────────────┐
-                        │   Microsoft Fabric    │
-                        │   OneLake • Semantic  │
-                        │   Models • Power BI   │
-                        └───────────────────────┘
-```
+![SAP with Microsoft AI - How the pieces fit together](about-sap-with-microsoft-ai.png)
+
+> 📥 [Download editable draw.io diagram](about-sap-with-microsoft-ai.drawio)
 
 ## How to Get Started
 

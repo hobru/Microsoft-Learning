@@ -1,0 +1,33 @@
+<mxfile>
+  <diagram name="Foundry AI and SAP Architecture" id="foundry">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- SAP Systems -->
+        <mxCell id="2" value="SAP Systems&#xa;&#xa;S/4HANA&#xa;ECC&#xa;SuccessFactors&#xa;Ariba&#xa;BW / HANA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="200" height="180" as="geometry" />
+        </mxCell>
+        <!-- Azure AI Foundry -->
+        <mxCell id="3" value="Azure AI Foundry&#xa;&#xa;Agent Service&#xa;MCP Tools&#xa;Foundry Models&#xa;(GPT-4o, GPT-5.x)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="80" width="280" height="140" as="geometry" />
+        </mxCell>
+        <!-- Fabric inside Foundry -->
+        <mxCell id="4" value="Fabric&#xa;OneLake&#xa;Semantic Models" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="240" width="200" height="70" as="geometry" />
+        </mxCell>
+        <!-- User Experience -->
+        <mxCell id="5" value="User Experience&#xa;&#xa;Microsoft Teams&#xa;M365 Copilot Chat&#xa;Power BI&#xa;Custom Apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="790" y="80" width="200" height="180" as="geometry" />
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="10" value="OData&#xa;RFC&#xa;BAPI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=10;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="3" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
