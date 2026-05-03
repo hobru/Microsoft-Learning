@@ -1,3 +1,15 @@
+---
+title: Architecture - Direct SAP Connectors in Fabric
+description: Using Microsoft Fabric's built-in SAP connectors (CDC, ODP, HANA, Table) to extract data directly into OneLake.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Direct SAP Connectors in Fabric
 
 This architecture uses Microsoft Fabric's built-in SAP connectors to extract data directly from SAP systems into OneLake — without an intermediate integration layer.

@@ -1,3 +1,15 @@
+---
+title: Architecture - SAP BTP with API Management and Cloud Connector
+description: Copilot Studio integration with SAP using SAP Business Technology Platform, SAP API Management, and SAP Cloud Connector.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Leveraging SAP Business Technology Platform (with SAP API Management and SAP Cloud Connector)
 
 ## Why would you use this scenario?

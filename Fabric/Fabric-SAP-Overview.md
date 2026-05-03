@@ -1,3 +1,15 @@
+---
+title: Microsoft Fabric & SAP Overview
+description: Overview of Microsoft Fabric integration options with SAP, including data pipelines, connectors, and recommended architecture patterns.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Microsoft Fabric & SAP
 
 Microsoft Fabric is a unified analytics platform that brings together data engineering, data science, real-time analytics, and business intelligence into a single SaaS experience built on OneLake. For SAP customers, Fabric provides powerful options to extract, transform, and analyze SAP data — enabling modern analytics on top of SAP's operational systems.

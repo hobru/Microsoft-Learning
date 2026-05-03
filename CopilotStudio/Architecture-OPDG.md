@@ -1,3 +1,15 @@
+---
+title: Architecture - On-Premises Data Gateway
+description: Copilot Studio integration with SAP using the on-premises data gateway for BAPI, RFC, and OData access.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Leveraging On-premises data gateway with access to BAPI / RFCs and OData Services
 
 

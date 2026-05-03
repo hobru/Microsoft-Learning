@@ -1,3 +1,15 @@
+---
+title: Joule & Microsoft 365 Copilot Integration
+description: How SAP Joule and Microsoft 365 Copilot integrate bi-directionally, including setup, architecture, and troubleshooting.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Joule & Microsoft 365 Copilot Integration
 
 SAP Joule and Microsoft 365 Copilot provide a bi-directional integration that allows end-users to access SAP capabilities directly from within Microsoft 365 Copilot and Microsoft Teams — without the need to build a custom agent. This page covers what the integration does, how to set it up, and how to troubleshoot it.

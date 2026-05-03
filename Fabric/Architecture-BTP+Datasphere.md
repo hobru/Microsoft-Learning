@@ -1,3 +1,15 @@
+---
+title: Architecture - Via SAP BTP / Datasphere
+description: Using SAP Business Technology Platform and SAP Datasphere as an intermediate layer between SAP systems and Microsoft Fabric.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Via SAP BTP / Datasphere
 
 This architecture leverages SAP Business Technology Platform (BTP) and/or SAP Datasphere as an intermediate layer between SAP backend systems and Microsoft Fabric.

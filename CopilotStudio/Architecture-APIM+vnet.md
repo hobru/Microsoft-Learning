@@ -1,3 +1,15 @@
+---
+title: Architecture - Azure API Management with vnet Peering
+description: Copilot Studio integration with SAP using Azure API Management and vnet peering for SAP systems running on Azure.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Leveraging Azure API Management and vnet Peering (e.g. SAP S/4HANA Private Cloud or Native)
 
 

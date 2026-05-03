@@ -1,3 +1,15 @@
+---
+title: Architecture - Demo Scenario (Public SAP System)
+description: Quick-start architecture for Copilot Studio and SAP integration using a publicly available SAP system for demo purposes.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # SAP System publically available (most likely a demo scenario)
 
 Unlike the other architectures described here, this is your Quick-Start architecture. The goal is to quickly show you how to get started and see the Copilot Studio and SAP integration in action. For production ready scenarios, please look at the other architectures as well.  

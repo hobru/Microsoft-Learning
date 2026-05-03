@@ -1,3 +1,15 @@
+---
+title: Copilot Studio & SAP Overview
+description: Overview of building Copilot agents with SAP data using Copilot Studio, including architecture options, connectors, and integration patterns.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Copilots with SAP
 Developing Copilot Agents with SAP data depends very much on the infrastructure, architecture and components that are available in your landscape today. This page provides an overview on 
 * What options are available?

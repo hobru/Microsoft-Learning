@@ -1,3 +1,15 @@
+---
+title: Azure AI Foundry & SAP Overview
+description: How Azure AI Foundry integrates with SAP to enable agentic AI scenarios, multi-agent orchestration, and enterprise-grade AI solutions.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Foundry AI and SAP Overview
 
 SAP systems are the operational backbone of many enterprises — managing financials, supply chain, procurement, HR, and more. With **Azure AI Foundry**, organizations can transform these systems of record into AI-powered systems of intelligence by building enterprise-grade agents that reason over SAP data and take action across business processes.

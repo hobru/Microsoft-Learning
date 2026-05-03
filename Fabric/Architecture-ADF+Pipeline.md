@@ -1,3 +1,15 @@
+---
+title: Architecture - Azure Data Factory / Fabric Pipelines
+description: Using Azure Data Factory or Fabric Data Pipelines to extract SAP data and land it in Microsoft Fabric's OneLake.
+author: hobruche
+ms.service: sap-on-azure
+ms.subservice: center-sap-solutions
+ms.topic: overview
+ms.custom: microsoft-ai
+ms.date: 05/03/2026
+ms.author: hobruche
+---
+
 # Via Azure Data Factory / Fabric Pipelines
 
 This architecture uses Azure Data Factory (ADF) or Fabric Data Pipelines — which share the same engine — to extract data from SAP systems and land it in Microsoft Fabric's OneLake.
