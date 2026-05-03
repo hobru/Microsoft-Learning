@@ -1,4 +1,4 @@
-# Leveraging Azure API Management and vnet Peering (e.g. SAP S/4HANA Prviate Cloud or Native)
+# Leveraging Azure API Management and vnet Peering (e.g. SAP S/4HANA Private Cloud or Native)
 
 
 ## Why would you use this scenario?
