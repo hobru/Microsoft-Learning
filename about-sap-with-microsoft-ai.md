@@ -71,7 +71,7 @@ The managed integration between **SAP Joule** and **Microsoft 365 Copilot** prov
 
 ### 4. Unified Analytics: Microsoft Fabric
 
-**Microsoft Fabric** brings SAP data into a unified analytics platform (OneLake) for reporting, data science, and AI. Extract SAP data via CDC, OData, HANA connectors, or pipeline-based approaches, and build Power BI dashboards, semantic models, and Fabric Data Agents on top.
+**Microsoft Fabric** brings SAP data into a unified analytics platform (OneLake) for reporting, data science, and AI. Extract SAP data via OData, HANA, ODP connectors, or pipeline-based approaches, and build Power BI dashboards, semantic models, and Fabric Data Agents on top.
 
 → [Learn more about Microsoft Fabric & SAP](./Fabric/Fabric-SAP-Overview.md)
 
@@ -95,7 +95,7 @@ The managed integration between **SAP Joule** and **Microsoft 365 Copilot** prov
         │                        ▼                            ▼
         │               ┌───────────────────────────────────────────────┐
         │               │         Integration Layer                      │
-        │               │  OData • RFC/BAPI • MCP • Connectors • CDC    │
+        │               │  OData • RFC/BAPI • MCP • Connectors • ODP    │
         │               └────────────────────────┬──────────────────────┘
         │                                        │
         ▼                                        ▼
@@ -142,7 +142,7 @@ For complex scenarios involving multi-agent orchestration, custom models, or dee
 
 **→ Start with Microsoft Fabric**
 
-Bring SAP data into Fabric's OneLake using CDC, OData, or table connectors. Build Power BI dashboards, semantic models, and enable Fabric Data Agents for natural language analytics.
+Bring SAP data into Fabric's OneLake using OData, ODP, or table connectors. Build Power BI dashboards, semantic models, and enable Fabric Data Agents for natural language analytics.
 
 📖 [Fabric & SAP integration patterns](./Fabric/Fabric-SAP-Overview.md#recommended-integration-patterns)
 

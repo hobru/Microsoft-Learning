@@ -61,7 +61,6 @@ Dataflows Gen2 are a good fit for **low-code, smaller-scale** data ingestion wit
 ### Data Pipelines
 
 Data Pipelines in Fabric (based on Azure Data Factory) support dedicated SAP connectors for large-scale, scheduled data extraction:
-- **SAP CDC (Change Data Capture)** — incremental extraction from SAP ECC and S/4HANA via ODP
 - **SAP Table** connector — direct table-level extraction
 - **SAP ODP (Operational Data Provisioning)** — extract from SAP extractors, CDS views, and ABAP objects
 - **SAP HANA** connector — direct HANA access
@@ -88,7 +87,7 @@ SAP Datasphere and Microsoft Fabric can work together:
 | Protocol | Use Case | Connector in Fabric |
 | --- | --- | --- |
 | **OData** | Transactional APIs, SuccessFactors, S/4HANA Cloud | OData connector (Dataflows, Pipelines) |
-| **RFC/BAPI** | Extraction from ECC/S/4HANA tables and BAPIs | SAP Table, SAP CDC, SAP ODP connectors |
+| **RFC/BAPI** | Extraction from ECC/S/4HANA tables and BAPIs | SAP Table, SAP ODP connectors |
 | **SQL / HANA** | Direct database access | SAP HANA connector |
 | **Open Hub** | BW extraction via Open Hub Destinations | SAP BW Open Hub connector |
 | **Files (CSV, Parquet)** | Pre-extracted data in a landing zone | File/ADLS connectors, Shortcuts |
@@ -115,7 +114,7 @@ The right pattern depends on your existing infrastructure and requirements:
 | Scenario | Recommended Pattern |
 | --- | --- |
 | SAP data already in Azure Data Lake | Use [Shortcuts](#shortcuts--mirroring) to reference data directly in OneLake |
-| Enterprise-scale extraction from SAP ECC/S/4HANA | Use [Data Pipelines with SAP CDC/ODP connectors](Architecture-DirectConnect.md) |
+| Enterprise-scale extraction from SAP ECC/S/4HANA | Use [Data Pipelines with SAP ODP connectors](Architecture-DirectConnect.md) |
 | SAP system behind a firewall, no Azure presence | Use [On-premises Data Gateway with Dataflows Gen2](Architecture-DirectConnect.md) |
 | SAP BTP / Datasphere already in place | Use [SAP Datasphere as an intermediate layer](Architecture-BTP+Datasphere.md) |
 | Existing Azure Data Factory pipelines | Use [ADF / Fabric Pipelines](Architecture-ADF+Pipeline.md) for seamless migration |
@@ -123,7 +122,7 @@ The right pattern depends on your existing infrastructure and requirements:
 
 ### Detailed Architecture Options
 
-* [Direct SAP Connectors in Fabric (OData, CDC, Table, HANA)](Architecture-DirectConnect.md)
+* [Direct SAP Connectors in Fabric (OData, Table, ODP, HANA)](Architecture-DirectConnect.md)
 * [Via SAP BTP / Datasphere](Architecture-BTP+Datasphere.md)
 * [Via Azure Data Factory / Fabric Pipelines](Architecture-ADF+Pipeline.md)
 
@@ -131,7 +130,6 @@ The right pattern depends on your existing infrastructure and requirements:
 
 * [Microsoft Fabric Documentation](https://learn.microsoft.com/en-us/fabric/)
 * [SAP Connectors in Data Pipelines](https://learn.microsoft.com/en-us/fabric/data-factory/connector-overview)
-* [SAP CDC Connector](https://learn.microsoft.com/en-us/fabric/data-factory/connector-sap-change-data-capture-overview)
 * [SAP HANA Connector in Dataflows](https://learn.microsoft.com/en-us/power-query/connectors/sap-hana/overview)
 * [SAP BW Connectors in Power Query](https://learn.microsoft.com/en-us/power-query/connectors/sap-bw/application-setup-and-connect)
 * [OneLake Shortcuts](https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts)

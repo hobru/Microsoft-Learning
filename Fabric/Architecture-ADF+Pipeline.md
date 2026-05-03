@@ -29,7 +29,7 @@ This architecture uses Azure Data Factory (ADF) or Fabric Data Pipelines — whi
 Fabric Data Pipelines use the same engine as Azure Data Factory and support the same SAP connectors:
 
 1. Create a Data Pipeline in your Fabric workspace
-2. Add Copy Data activities with SAP connectors (SAP CDC, SAP Table, SAP ODP, SAP HANA, OData)
+2. Add Copy Data activities with SAP connectors (SAP Table, SAP ODP, SAP HANA, OData)
 3. Configure the SAP source connection
 4. Set the destination to a Lakehouse or Warehouse in OneLake
 5. Add any transformation steps (Data Flows, Notebooks, or Stored Procedures)
@@ -56,7 +56,7 @@ If you already have ADF pipelines or prefer to manage pipelines in Azure:
 For SAP systems behind a firewall, ADF and Fabric Pipelines use the **Self-Hosted Integration Runtime** (SHIR):
 
 1. Install the SHIR on a machine that can access the SAP system
-2. For SAP Table/CDC/ODP: install the SAP .NET Connector (NCo) on the SHIR machine
+2. For SAP Table/ODP: install the SAP .NET Connector (NCo) on the SHIR machine
 3. Register the SHIR in Azure Data Factory or Fabric
 4. Configure your pipeline's linked service to use the SHIR
 
@@ -68,7 +68,7 @@ For SAP systems behind a firewall, ADF and Fabric Pipelines use the **Self-Hoste
 | Method | Description | Connector Support |
 | --- | --- | --- |
 | **Basic (SAP user/password)** | Service account credentials | All SAP connectors |
-| **SNC (Secure Network Communications)** | Encrypted communication for RFC-based connectors | SAP Table, SAP CDC, SAP ODP |
+| **SNC (Secure Network Communications)** | Encrypted communication for RFC-based connectors | SAP Table, SAP ODP |
 | **OAuth 2.0** | Token-based auth for cloud SAP systems | OData (SuccessFactors, S/4HANA Cloud) |
 | **Windows Authentication** | For SHIR running under a domain account | SAP HANA (via SHIR) |
 
@@ -76,7 +76,7 @@ For SAP systems behind a firewall, ADF and Fabric Pipelines use the **Self-Hoste
 
 | Feature | Azure Data Factory | Fabric Data Pipelines |
 | --- | --- | --- |
-| **SAP Connectors** | Full set (CDC, Table, ODP, HANA, BW) | Same connectors (shared engine) |
+| **SAP Connectors** | Full set (Table, ODP, HANA, BW) | Same connectors (shared engine) |
 | **Destination** | ADLS, SQL, Cosmos, OneLake, ... | OneLake (Lakehouse / Warehouse) natively |
 | **Management** | Azure Portal | Fabric workspace |
 | **Monitoring** | ADF Monitor, Azure Monitor | Fabric Monitor |
@@ -88,6 +88,5 @@ For new Fabric projects, using Fabric Data Pipelines directly is recommended. Fo
 ## Links & Resources
 
 * [Data Pipelines in Fabric](https://learn.microsoft.com/en-us/fabric/data-factory/data-factory-overview)
-* [SAP CDC Connector](https://learn.microsoft.com/en-us/fabric/data-factory/connector-sap-change-data-capture-overview)
 * [Self-Hosted Integration Runtime](https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)
 * [Migrate ADF to Fabric](https://learn.microsoft.com/en-us/fabric/data-factory/compare-fabric-data-factory-and-azure-data-factory)
