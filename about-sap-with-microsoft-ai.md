@@ -1,6 +1,6 @@
 ---
 title: About SAP with Microsoft AI
-description: Learn what Microsoft AI with SAP is, why organizations use it, and how to get started with Joule, Copilot Studio, Azure AI Foundry, and Microsoft Fabric.
+description: Learn what Microsoft AI with SAP is, why organizations use it, and how to get started with Joule, Copilot Studio, Azure AI Foundry.
 author: hobruche
 ms.service: sap-on-azure
 ms.subservice: center-sap-solutions
@@ -17,13 +17,12 @@ ms.author: hobruche
 
 ## What Is Microsoft AI with SAP?
 
-Microsoft AI with SAP refers to the combination of Microsoft's AI platform and tools — including **Microsoft 365 Copilot**, **Copilot Studio**, **Azure AI Foundry**, and **Microsoft Fabric** — with SAP's enterprise systems to create intelligent, AI-powered business experiences on top of SAP data and processes.
+Microsoft AI with SAP refers to the combination of Microsoft's AI platform and tools — including **Microsoft 365 Copilot**, **Copilot Studio**, and **Azure AI Foundry** — with SAP's enterprise systems to create intelligent, AI-powered business experiences on top of SAP data and processes.
 
 SAP systems are the operational backbone of many organizations, managing financials, supply chain, procurement, HR, and more. Microsoft AI enables organizations to unlock the value in these systems by:
 
 - Bringing **natural language interfaces** to SAP data (ask questions, get answers — no transaction codes needed)
 - Building **AI agents** that can reason over SAP data and take action across business processes
-- Creating **unified analytics** that combine SAP data with other sources for richer insights
 - Enabling **agentic automation** that can orchestrate multi-step SAP workflows
 
 ## Why Would You Do This?
@@ -48,7 +47,7 @@ SAP systems are the operational backbone of many organizations, managing financi
 | **Procurement** | "What purchase orders are pending approval?" — queried from SAP Ariba or S/4HANA |
 | **HR** | "What is my remaining leave balance?" — retrieved from SAP SuccessFactors |
 | **Supply Chain** | "What is the delivery status for sales order 800123?" — checked in SAP |
-| **Analytics** | Spend analysis dashboards combining SAP procurement data with market data |
+
 
 ## What Can You Do?
 
@@ -72,11 +71,6 @@ The managed integration between **SAP Joule** and **Microsoft 365 Copilot** prov
 
 → [Learn more about Foundry AI & SAP](./Foundry/FoundryAI-SAP.md)
 
-### 4. Unified Analytics: Microsoft Fabric
-
-**Microsoft Fabric** brings SAP data into a unified analytics platform (OneLake) for reporting, data science, and AI. Extract SAP data via OData, HANA, ODP connectors, or pipeline-based approaches, and build Power BI dashboards, semantic models, and Fabric Data Agents on top.
-
-→ [Learn more about Microsoft Fabric & SAP](./Fabric/Fabric-SAP-Overview.md)
 
 ## How These Pieces Fit Together
 
@@ -94,7 +88,7 @@ If your organization has Microsoft 365 Copilot licenses and SAP Joule enabled, t
 
 📖 [Joule & Copilot setup guide](./Joule/Joule-Copilot-Overview.md#setup--configuration)
 
-### Starting Point 2: "I want to build a custom agent for a specific process that needs information from an SAP system"
+### Starting Point 2: "I want to build a custom agent using low-code for a specific process that needs information from an SAP system"
 
 **→ Start with Copilot Studio**
 
@@ -110,13 +104,7 @@ For complex scenarios involving multi-agent orchestration, custom models, or dee
 
 📖 [Foundry AI & SAP overview](./Foundry/FoundryAI-SAP.md)
 
-### Starting Point 4: "I want analytics and dashboards on SAP and non-SAP data"
 
-**→ Start with Microsoft Fabric**
-
-Bring SAP data into Fabric's OneLake using OData, ODP, or table connectors. Build Power BI dashboards, semantic models, and enable Fabric Data Agents for natural language analytics.
-
-📖 [Fabric & SAP integration patterns](./Fabric/Fabric-SAP-Overview.md#recommended-integration-patterns)
 
 ## Decision Guide
 
@@ -125,7 +113,6 @@ Bring SAP data into Fabric's OneLake using OData, ODP, or table connectors. Buil
 | Do you have M365 Copilot + SAP Joule already? | Start with [Joule ↔ Copilot](./Joule/Joule-Copilot-Overview.md) |
 | Do you need a custom agent for a specific process? | Start with [Copilot Studio](./CopilotStudio/Copilot-with-SAP-Overview.md) |
 | Do you need multi-agent orchestration or complex workflows? | Start with [Azure AI Foundry](./Foundry/FoundryAI-SAP.md) |
-| Do you need analytics, dashboards, or historical analysis? | Start with [Microsoft Fabric](./Fabric/Fabric-SAP-Overview.md) |
 | Do you want all of the above? | Combine them — they work together |
 
 ## Key Principles
