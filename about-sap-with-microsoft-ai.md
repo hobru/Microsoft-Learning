@@ -68,7 +68,7 @@ The managed integration between **SAP Joule** and **Microsoft 365 Copilot** prov
 
 ### 3. Build Enterprise AI Solutions: Azure AI Foundry
 
-**Azure AI Foundry** is the full AI platform for advanced scenarios — custom models, multi-agent orchestration, MCP tools, and deep integration with SAP APIs (OData, RFC, BAPIs). Build sophisticated agents that can reason, plan, and execute complex multi-step SAP workflows.
+**Azure AI Foundry** is the full AI platform for advanced scenarios — custom models, multi-agent orchestration, MCP tools, and deep integration with SAP APIs (OData, RFC, BAPIs). Build sophisticated agents that can reason, plan, and execute complex multi-step workflows.
 
 → [Learn more about Foundry AI & SAP](./Foundry/FoundryAI-SAP.md)
 
