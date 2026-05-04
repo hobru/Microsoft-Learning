@@ -115,6 +115,7 @@ The integration follows a trust-based architecture:
 - User mapping between Microsoft Entra ID and SAP must be correctly configured; mismatches will result in authentication errors
 - Accessible Joule capabilities depends on the SAP applications and Joule skills enabled in your landscape
 - Check [SAP Note 3722273](https://me.sap.com/notes/3722273) for the latest known issues and fixes
+- Run the [Joule-Copilot Integration Validation Tool](https://github.com/microsoft/joule-copilot-integration-validation-tool) to troubleshoot your configuration
 
 ## Troubleshooting
 
