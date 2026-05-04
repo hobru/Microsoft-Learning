@@ -1,64 +1,46 @@
-<mxfile>
+<mxfile host="Electron">
   <diagram name="SAP with Microsoft AI Overview" id="overview">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
+    <mxGraphModel dx="907" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <!-- User Experience Layer -->
-        <mxCell id="2" value="User Experience&#xa;Microsoft 365 Copilot  •  Teams  •  Outlook  •  Websites  •  Apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="100" y="30" width="900" height="60" as="geometry" />
+        <mxCell id="2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" value="User Experience&#xa;Microsoft 365 Copilot  •  Teams  •  Outlook  •  Websites  •  Apps" vertex="1">
+          <mxGeometry height="60" width="900" x="100" y="30" as="geometry" />
         </mxCell>
-        <!-- Joule -->
-        <mxCell id="3" value="Joule ↔ Copilot&#xa;(Pre-built)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="100" y="150" width="200" height="70" as="geometry" />
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" value="Joule ↔ Copilot&#xa;(Pre-built)" vertex="1">
+          <mxGeometry height="70" width="200" x="100" y="150" as="geometry" />
         </mxCell>
-        <!-- Copilot Studio -->
-        <mxCell id="4" value="Copilot Studio&#xa;Custom Agents&#xa;(Low/Pro Code)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="400" y="150" width="220" height="70" as="geometry" />
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" value="Copilot Studio&#xa;Custom Agents&#xa;(Low/Pro Code)" vertex="1">
+          <mxGeometry height="70" width="220" x="400" y="150" as="geometry" />
         </mxCell>
-        <!-- Azure AI Foundry -->
-        <mxCell id="5" value="Azure AI Foundry&#xa;Enterprise AI&#xa;(Pro Code)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="720" y="150" width="220" height="70" as="geometry" />
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" value="Azure AI Foundry&#xa;Enterprise AI&#xa;(Pro Code)" vertex="1">
+          <mxGeometry height="70" width="220" x="720" y="150" as="geometry" />
         </mxCell>
-        <!-- Integration Layer -->
-        <mxCell id="6" value="Integration Layer&#xa;OData  •  RFC/BAPI  •  MCP  •  Connectors  •  ODP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="350" y="280" width="590" height="55" as="geometry" />
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" value="Integration Layer&#xa;OData  •  RFC/BAPI  •  MCP  •  Connectors  •  ODP" vertex="1">
+          <mxGeometry height="55" width="590" x="350" y="280" as="geometry" />
         </mxCell>
-        <!-- SAP Systems -->
-        <mxCell id="7" value="SAP Systems&#xa;S/4HANA  •  ECC  •  SuccessFactors  •  Ariba  •  BTP  •  BW/HANA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="100" y="400" width="900" height="60" as="geometry" />
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" value="SAP Systems&#xa;S/4HANA  •  ECC  •  SuccessFactors  •  Ariba  •  BTP  •  BW/HANA" vertex="1">
+          <mxGeometry height="60" width="900" x="100" y="400" as="geometry" />
         </mxCell>
-        <!-- Microsoft Fabric -->
-        <mxCell id="8" value="Microsoft Fabric&#xa;OneLake  •  Semantic Models  •  Power BI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="370" y="530" width="320" height="55" as="geometry" />
-        </mxCell>
-        <!-- Arrows from User Experience -->
-        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="2" target="3" parent="1">
+        <mxCell id="20" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="2" target="4" parent="1">
+        <mxCell id="21" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="2" target="5" parent="1">
+        <mxCell id="22" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- Arrows from agents to integration -->
-        <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="4" target="6" parent="1">
+        <mxCell id="23" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="5" target="6" parent="1">
+        <mxCell id="24" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- Joule to SAP -->
-        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="3" target="7" parent="1">
+        <mxCell id="25" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- Integration to SAP -->
-        <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="6" target="7" parent="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <!-- SAP to Fabric -->
-        <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="7" target="8" parent="1">
+        <mxCell id="26" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
