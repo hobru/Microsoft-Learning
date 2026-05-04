@@ -15,7 +15,7 @@ ms.author: hobruche
 > [!Important]
 > When consuming SAP APIs and interfaces, always ensure your usage complies with [SAP's API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). Please check with your SAP contact or account team if you have questions about permitted API usage in your specific scenario.
 
-Microsoft Fabric is a unified analytics platformthat brings together data engineering, data science, real-time analytics, and business intelligence into a single SaaS experience built on OneLake. For SAP customers, Fabric provides powerful options to extract, transform, and analyze SAP data — enabling modern analytics on top of SAP's operational systems.
+Microsoft Fabric is a unified analytics platform that brings together data engineering, data science, real-time analytics, and business intelligence into a single SaaS experience built on OneLake. For SAP customers, Fabric provides powerful options to extract, transform, and analyze SAP data — enabling modern analytics on top of SAP's operational systems.
 
 > [!Important]
 > Prior to implementing an SAP AI scenario review the SAP API Policy for usage guidelines and restrictions [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) documentation.
@@ -32,9 +32,9 @@ This page provides an overview of:
 SAP systems contain some of the most valuable business data in an organization — financials, supply chain, procurement, HR, and more. Microsoft Fabric enables organizations to:
 
 - **Consolidate SAP data** into OneLake alongside other data sources for unified analytics
-- **Build modern dashboards and reports** on top of SAP operational data using Power BI (included in Fabric)
-- **Enable data science & AI** on SAP data using Fabric's built-in notebooks and ML capabilities
-- **Reduce data silos** by bringing SAP data into a governed, organization-wide data platform
+- **Build modern dashboards and reports** on top of a combination of SAP and non-SAP operational data using Power BI (included in Fabric)
+- **Enable data science & AI** on SAP and non-SAP data using Fabric's built-in notebooks and ML capabilities
+- **Reduce data silos** by bringing SAP and non-SAP data into a governed, organization-wide data platform
 - **Implement a Medallion architecture** (Bronze/Silver/Gold) with SAP as a key source system
 
 ## Key Scenarios & Use Cases
