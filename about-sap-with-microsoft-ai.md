@@ -94,7 +94,7 @@ If your organization has Microsoft 365 Copilot licenses and SAP Joule enabled, t
 
 📖 [Joule & Copilot setup guide](./Joule/Joule-Copilot-Overview.md#setup--configuration)
 
-### Starting Point 2: "I want to build a custom agent for a specific SAP process"
+### Starting Point 2: "I want to build a custom agent for a specific process that needs information from an SAP system"
 
 **→ Start with Copilot Studio**
 
@@ -102,7 +102,7 @@ Use Copilot Studio to build agents tailored to your business processes. Connect 
 
 📖 [Copilot Studio & SAP architecture options](./CopilotStudio/Copilot-with-SAP-Overview.md)
 
-### Starting Point 3: "I want advanced AI agents with multi-step SAP workflows"
+### Starting Point 3: "I want advanced AI agents with multi-step workflows that include SAP systems"
 
 **→ Start with Azure AI Foundry**
 
@@ -110,7 +110,7 @@ For complex scenarios involving multi-agent orchestration, custom models, or dee
 
 📖 [Foundry AI & SAP overview](./Foundry/FoundryAI-SAP.md)
 
-### Starting Point 4: "I want analytics and dashboards on SAP data"
+### Starting Point 4: "I want analytics and dashboards on SAP and non-SAP data"
 
 **→ Start with Microsoft Fabric**
 
