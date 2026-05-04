@@ -157,9 +157,9 @@ A lot of older or aquired SAP Systems support SOAP and REST services. These prot
 
 For pro-code integrations via Azure AI Foundry or the Agent Toolkit, HTTP(S) calls can be done via commonly available packages. 
 ### BAPI / RFC
-Copilot Studio already provides a well-proven SAP BAPI / RFC connector that allows users to connect to older systems. The support is done using the on-premises Data Gateway together with the [SAP .Net Connector](https://support.sap.com/en/product/connectors/msnet.html) which has to be downloaded with a so called S-User.  
+Copilot Studio already provides a well-proven [SAP ERP Connector](https://learn.microsoft.com/en-us/power-platform/sap/roles-guidance/power-platform-app-maker#using-sap-rfcs-and-bapis) (for BAPI and RFCs) that allows users to connect to older systems. The support is done using the on-premises Data Gateway together with the [SAP .Net Connector](https://support.sap.com/en/product/connectors/msnet.html) which has to be downloaded with a so called S-User.  
 
-The SAP RFC Connector in Copilot Studio also supports Single Sign-On / Principal Propagation via Kerberos and X.509 certificates. 
+The [SAP ERP Connector](https://learn.microsoft.com/en-us/power-platform/sap/roles-guidance/power-platform-app-maker#using-sap-rfcs-and-bapis) in Copilot Studio also supports Single Sign-On / Principal Propagation via Kerberos and X.509 certificates. 
 
 ### MCP
 MCP, the [Model Context Protocol](https://github.com/modelcontextprotocol), is an open protocol that enables seamless integration between LLM applications, like Copilot, and external data sources and tools. In contrast to the simple API based integration mentioned above, an MCP based integration enables the Copilot to identify and create the required payload to retrieve data from the SAP system in a very dynamic and efficient way. 
