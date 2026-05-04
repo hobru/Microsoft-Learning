@@ -54,7 +54,7 @@ The following SAP applications support the Joule integration with Microsoft 365 
 
 Before setting up the integration, ensure you have:
 
-- **Microsoft 365 Copilot** license for end-users
+- **Microsoft 365 Copilot** license for end-users and the corresponding SAP licenses for Joule
 - **SAP BTP** account with SAP Cloud Identity Services (IAS) configured
 - **SAP Joule** enabled for your SAP applications
 - **Microsoft Entra ID** (Azure AD) tenant with admin access
