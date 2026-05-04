@@ -44,6 +44,7 @@ The integration is based on a trust relationship between SAP Cloud Identity Serv
 
 The following SAP applications support the Joule integration with Microsoft 365 Copilot (check [SAP's documentation](https://help.sap.com/docs/joule/integrating-joule-with-sap/integrating-joule-with-microsoft-365-copilot) for the latest list):
 
+- SAP S/4HANA Cloud, private cloud edition
 - SAP S/4HANA Cloud, public edition
 - SAP SuccessFactors
 - SAP Ariba (selected scenarios)
