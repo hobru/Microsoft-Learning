@@ -161,6 +161,9 @@ Copilot Studio already provides a well-proven [SAP ERP Connector](https://learn.
 
 The [SAP ERP Connector](https://learn.microsoft.com/en-us/power-platform/sap/roles-guidance/power-platform-app-maker#using-sap-rfcs-and-bapis) in Copilot Studio also supports Single Sign-On / Principal Propagation via Kerberos and X.509 certificates. 
 
+### RPA with SAP GUI in Power Automate Desktop
+You can use Power Automate Desktop to build from simple to highly sophisticated end-to-end automation. Check out https://learn.microsoft.com/en-us/power-automate/guidance/rpa-sap-playbook/action-based-sap-gui-automation-manually-overview for more details.
+
 ### MCP
 MCP, the [Model Context Protocol](https://github.com/modelcontextprotocol), is an open protocol that enables seamless integration between LLM applications, like Copilot, and external data sources and tools. In contrast to the simple API based integration mentioned above, an MCP based integration enables the Copilot to identify and create the required payload to retrieve data from the SAP system in a very dynamic and efficient way. 
 
