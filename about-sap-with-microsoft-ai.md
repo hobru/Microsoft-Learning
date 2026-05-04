@@ -35,7 +35,6 @@ SAP systems are the operational backbone of many organizations, managing financi
 ### For Organizations
 - **Reduce training overhead** — users interact with SAP through natural language, not complex UIs
 - **Accelerate processes** — AI agents can automate multi-step workflows that previously required manual SAP transactions
-- **Break down data silos** — combine SAP data with Microsoft 365 data, other business systems, and external sources
 - **Enable citizen developers** — business users can build agents with low-code tools in Copilot Studio
 - **Maintain governance** — enterprise-grade security, compliance, and access controls across all AI interactions with SAP
 
