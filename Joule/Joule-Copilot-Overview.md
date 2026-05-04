@@ -111,7 +111,7 @@ The integration follows a trust-based architecture:
 
 ## Limitations & Known Issues
 
-- The integration is limited to **SAP Joule's built-in capabilities** — custom skills or agents built in Copilot Studio are not routed through this integration
+- The integration is limited to **SAP Joule's built-in capabilities** — custom skills or agents built in Copilot Studio are not routed through this integration. For a list of SAP Joule capabilities see https://help.sap.com/doc/1b82af8383e2443eaa95a034a70beb1b/CLOUD/en-US/c0bb884c3e27438695f4750b547aac77.pdf. 
 - User mapping between Microsoft Entra ID and SAP must be correctly configured; mismatches will result in authentication errors
 - Accessible Joule capabilities depends on the SAP applications and Joule skills enabled in your landscape
 - Check [SAP Note 3722273](https://me.sap.com/notes/3722273) for the latest known issues and fixes
